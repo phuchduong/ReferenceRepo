@@ -1,0 +1,2 @@
+#untrack all files after updating an ignore file.
+git rm -r --cached .
