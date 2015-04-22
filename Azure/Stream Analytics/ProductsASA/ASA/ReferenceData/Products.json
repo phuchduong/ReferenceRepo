@@ -1,0 +1,1277 @@
+[
+  {
+    "Id":167456,
+    "Name":"Sprayable Energy",
+    "Price":112
+  },
+  {
+    "Id":1726268,
+    "Name":"Aluminum Zirconium Tetrachlorohydrex Gly",
+    "Price":113
+  },
+  {
+    "Id":1872715,
+    "Name":"Lisinopril",
+    "Price":172
+  },
+  {
+    "Id":1908846,
+    "Name":"Ranitidine Hydrochloride",
+    "Price":63
+  },
+  {
+    "Id":2107742,
+    "Name":"Acetaminophen",
+    "Price":171
+  },
+  {
+    "Id":2151353,
+    "Name":"varenicline tartrate",
+    "Price":199
+  },
+  {
+    "Id":2168235,
+    "Name":"CAMPHOR",
+    "Price":150
+  },
+  {
+    "Id":2192805,
+    "Name":"Ferrous Fumarate and Polysacchride Iron Vitamin Mineral Complex Supplement",
+    "Price":144
+  },
+  {
+    "Id":2199466,
+    "Name":"Ensulizole Octinoxate",
+    "Price":187
+  },
+  {
+    "Id":2305127,
+    "Name":"Alprazolam",
+    "Price":140
+  },
+  {
+    "Id":2325727,
+    "Name":"Benzocaine and Menthol",
+    "Price":173
+  },
+  {
+    "Id":2344900,
+    "Name":"Homosalate",
+    "Price":46
+  },
+  {
+    "Id":2373491,
+    "Name":"Diphenhydramine HCl",
+    "Price":151
+  },
+  {
+    "Id":2374092,
+    "Name":"Octinoxate",
+    "Price":47
+  },
+  {
+    "Id":2383434,
+    "Name":"Lisinopril",
+    "Price":121
+  },
+  {
+    "Id":2424474,
+    "Name":"Quetiapine fumarate",
+    "Price":182
+  },
+  {
+    "Id":2424952,
+    "Name":"Zinc Oxide",
+    "Price":169
+  },
+  {
+    "Id":2433572,
+    "Name":"Loxapine",
+    "Price":157
+  },
+  {
+    "Id":2454311,
+    "Name":"Ibuprofen",
+    "Price":52
+  },
+  {
+    "Id":2458733,
+    "Name":"ETHYL ALCOHOL",
+    "Price":135
+  },
+  {
+    "Id":2460959,
+    "Name":"Desogestrel and Ethinyl Estradiol",
+    "Price":115
+  },
+  {
+    "Id":2465487,
+    "Name":"peginterferon beta-1a",
+    "Price":130
+  },
+  {
+    "Id":2474146,
+    "Name":"OCTINOXATE",
+    "Price":49
+  },
+  {
+    "Id":2477670,
+    "Name":"Nicotine",
+    "Price":190
+  },
+  {
+    "Id":2480697,
+    "Name":"Rizatriptan Benzoate",
+    "Price":102
+  },
+  {
+    "Id":2483304,
+    "Name":"bacitracin",
+    "Price":182
+  },
+  {
+    "Id":2497664,
+    "Name":"AMANTADINE HYDROCHLORIDE",
+    "Price":124
+  },
+  {
+    "Id":2519027,
+    "Name":"Isosorbide Dinitrate",
+    "Price":114
+  },
+  {
+    "Id":2519030,
+    "Name":"Epinephrine",
+    "Price":167
+  },
+  {
+    "Id":2524837,
+    "Name":"Benzonatate",
+    "Price":193
+  },
+  {
+    "Id":2530999,
+    "Name":"carbamazepine",
+    "Price":157
+  },
+  {
+    "Id":2531131,
+    "Name":"Pectin",
+    "Price":200
+  },
+  {
+    "Id":2531258,
+    "Name":"Diphenhydramine HCl",
+    "Price":200
+  },
+  {
+    "Id":2533890,
+    "Name":"Geotrichum candidum",
+    "Price":101
+  },
+  {
+    "Id":2534288,
+    "Name":"ALCOHOL",
+    "Price":72
+  },
+  {
+    "Id":2537475,
+    "Name":"TITANIUM DIOXIDE",
+    "Price":192
+  },
+  {
+    "Id":2543076,
+    "Name":"Nicotine Polacrilex",
+    "Price":187
+  },
+  {
+    "Id":2543226,
+    "Name":"Sucralfate",
+    "Price":113
+  },
+  {
+    "Id":2563065,
+    "Name":"Beta Vulgaris",
+    "Price":79
+  },
+  {
+    "Id":2569622,
+    "Name":"OCTINOXATE",
+    "Price":177
+  },
+  {
+    "Id":2571914,
+    "Name":"menthol",
+    "Price":162
+  },
+  {
+    "Id":2584290,
+    "Name":"SALICYLIC ACID",
+    "Price":140
+  },
+  {
+    "Id":2586236,
+    "Name":"ZINC OXIDE",
+    "Price":159
+  },
+  {
+    "Id":2590512,
+    "Name":"DIMETHICONE",
+    "Price":31
+  },
+  {
+    "Id":2593171,
+    "Name":"fluocinolone acetonide",
+    "Price":39
+  },
+  {
+    "Id":2593488,
+    "Name":"HYDROCODONE BITARTRATE AND ACETAMINOPHEN",
+    "Price":117
+  },
+  {
+    "Id":2606407,
+    "Name":"Lamotrigine",
+    "Price":152
+  },
+  {
+    "Id":2619850,
+    "Name":"Petrolatum",
+    "Price":193
+  },
+  {
+    "Id":2619864,
+    "Name":"Piperonyl butoxide",
+    "Price":74
+  },
+  {
+    "Id":2620329,
+    "Name":"alcohol",
+    "Price":63
+  },
+  {
+    "Id":2646926,
+    "Name":"Mineral Oil",
+    "Price":23
+  },
+  {
+    "Id":2651615,
+    "Name":"CALCIUM CARBONATE",
+    "Price":51
+  },
+  {
+    "Id":2669788,
+    "Name":"ARSENIC TRIOXIDE",
+    "Price":59
+  },
+  {
+    "Id":2682653,
+    "Name":"PHENYLEPHRINE HYDROCHLORIDE and PYRILAMINE MALEATE",
+    "Price":178
+  },
+  {
+    "Id":2684070,
+    "Name":"Lovastatin",
+    "Price":184
+  },
+  {
+    "Id":2689041,
+    "Name":"OCTINOXATE",
+    "Price":65
+  },
+  {
+    "Id":2693056,
+    "Name":"Labetalol hydrochloride",
+    "Price":106
+  },
+  {
+    "Id":2693060,
+    "Name":"Aluminum hydroxide",
+    "Price":192
+  },
+  {
+    "Id":2696125,
+    "Name":"Benzocaine",
+    "Price":48
+  },
+  {
+    "Id":2696266,
+    "Name":"Hypromellose 2910 (4000 MPA.S)",
+    "Price":146
+  },
+  {
+    "Id":2697021,
+    "Name":"thioridazine hydrochloride",
+    "Price":116
+  },
+  {
+    "Id":2703772,
+    "Name":"Acetaminophen",
+    "Price":50
+  },
+  {
+    "Id":2705598,
+    "Name":"BENZALKONIUM CHLORIDE",
+    "Price":187
+  },
+  {
+    "Id":2712893,
+    "Name":"telmisartan and hydrochlorthiazide",
+    "Price":113
+  },
+  {
+    "Id":2713018,
+    "Name":"naproxen sodium",
+    "Price":28
+  },
+  {
+    "Id":2718998,
+    "Name":"menthol",
+    "Price":108
+  },
+  {
+    "Id":2726503,
+    "Name":"ALUMINUM CHLOROHYDRATE",
+    "Price":193
+  },
+  {
+    "Id":2728375,
+    "Name":"Diphenhydramine HCL",
+    "Price":30
+  },
+  {
+    "Id":2731366,
+    "Name":"Aluminum Zirconium Tetrachlorohydrex Gly",
+    "Price":115
+  },
+  {
+    "Id":2731557,
+    "Name":"Diphenhydramine Hydrochloride",
+    "Price":111
+  },
+  {
+    "Id":2739033,
+    "Name":"Menthol",
+    "Price":168
+  },
+  {
+    "Id":2740294,
+    "Name":"Chlordiazepoxide Hydrochloride",
+    "Price":179
+  },
+  {
+    "Id":2741567,
+    "Name":"Duloxetine",
+    "Price":162
+  },
+  {
+    "Id":2742720,
+    "Name":"Magnesium Sulfate",
+    "Price":83
+  },
+  {
+    "Id":2754406,
+    "Name":"Pyrithione zinc",
+    "Price":89
+  },
+  {
+    "Id":2760402,
+    "Name":"Lamotrigine",
+    "Price":77
+  },
+  {
+    "Id":2770105,
+    "Name":"ANAS BARBARIAE",
+    "Price":183
+  },
+  {
+    "Id":2773362,
+    "Name":"Nicotine polacrilex",
+    "Price":83
+  },
+  {
+    "Id":2775216,
+    "Name":"DINOPROSTONE",
+    "Price":117
+  },
+  {
+    "Id":2775916,
+    "Name":"ALUMINUM CHLOROHYDRATE",
+    "Price":100
+  },
+  {
+    "Id":2776027,
+    "Name":"Naproxen Sodium",
+    "Price":48
+  },
+  {
+    "Id":2776063,
+    "Name":"ACETAMINOPHEN",
+    "Price":125
+  },
+  {
+    "Id":2776105,
+    "Name":"White Petroleum",
+    "Price":113
+  },
+  {
+    "Id":2780926,
+    "Name":"HYDROGEN PEROXIDE",
+    "Price":159
+  },
+  {
+    "Id":2783923,
+    "Name":"BENZOYL PEROXIDE",
+    "Price":131
+  },
+  {
+    "Id":2785439,
+    "Name":"naproxen sodium",
+    "Price":193
+  },
+  {
+    "Id":2785542,
+    "Name":"English Walnut",
+    "Price":176
+  },
+  {
+    "Id":2791706,
+    "Name":"avobenzone",
+    "Price":112
+  },
+  {
+    "Id":2792979,
+    "Name":"Prednisone",
+    "Price":51
+  },
+  {
+    "Id":2792993,
+    "Name":"Treatment Set TS330416",
+    "Price":19
+  },
+  {
+    "Id":2793375,
+    "Name":"Glimepiride",
+    "Price":90
+  },
+  {
+    "Id":2797602,
+    "Name":"HEPARIN SODIUM",
+    "Price":132
+  },
+  {
+    "Id":2801941,
+    "Name":"Meclizine",
+    "Price":138
+  },
+  {
+    "Id":2803466,
+    "Name":"Adrenalinum",
+    "Price":88
+  },
+  {
+    "Id":2803693,
+    "Name":"nicardipine hydrochloride",
+    "Price":127
+  },
+  {
+    "Id":2806295,
+    "Name":"ethanol",
+    "Price":153
+  },
+  {
+    "Id":2808920,
+    "Name":"cocoa butter",
+    "Price":37
+  },
+  {
+    "Id":2810742,
+    "Name":"fluticasone furoate",
+    "Price":79
+  },
+  {
+    "Id":2815198,
+    "Name":"Epsom Salt",
+    "Price":102
+  },
+  {
+    "Id":2815291,
+    "Name":"Desogestrel and Ethinyl Estradiol",
+    "Price":140
+  },
+  {
+    "Id":2817735,
+    "Name":"Aluminum Zirconium Tetrachlorohydrex GLY",
+    "Price":117
+  },
+  {
+    "Id":2818139,
+    "Name":"stavudine",
+    "Price":139
+  },
+  {
+    "Id":2819306,
+    "Name":"Tramadol Hydrochloride",
+    "Price":18
+  },
+  {
+    "Id":2820987,
+    "Name":"Tramadol Hydrochloride",
+    "Price":73
+  },
+  {
+    "Id":2829182,
+    "Name":"Warfarin Sodium",
+    "Price":115
+  },
+  {
+    "Id":2831262,
+    "Name":"Avobenzone",
+    "Price":154
+  },
+  {
+    "Id":2834342,
+    "Name":"Boricum",
+    "Price":130
+  },
+  {
+    "Id":2834349,
+    "Name":"Rhus toxicodendron",
+    "Price":149
+  },
+  {
+    "Id":2837773,
+    "Name":"sertraline hydrochloride",
+    "Price":142
+  },
+  {
+    "Id":2844900,
+    "Name":"Acyclovir",
+    "Price":102
+  },
+  {
+    "Id":2848134,
+    "Name":"Onion",
+    "Price":152
+  },
+  {
+    "Id":2851481,
+    "Name":"TRICLOSAN",
+    "Price":37
+  },
+  {
+    "Id":2853876,
+    "Name":"Olive Olea europaea",
+    "Price":102
+  },
+  {
+    "Id":2857224,
+    "Name":"TRICLOSAN",
+    "Price":96
+  },
+  {
+    "Id":2863599,
+    "Name":"Ofloxacin",
+    "Price":135
+  },
+  {
+    "Id":2867263,
+    "Name":"Salicylic Acid",
+    "Price":53
+  },
+  {
+    "Id":2867289,
+    "Name":"Methotrexate",
+    "Price":53
+  },
+  {
+    "Id":2867589,
+    "Name":"Arnica",
+    "Price":133
+  },
+  {
+    "Id":2868279,
+    "Name":"beef",
+    "Price":165
+  },
+  {
+    "Id":2875156,
+    "Name":"WITCH HAZEL",
+    "Price":122
+  },
+  {
+    "Id":2878510,
+    "Name":"nitroglycerin",
+    "Price":157
+  },
+  {
+    "Id":2883400,
+    "Name":"SALICYLIC ACID",
+    "Price":87
+  },
+  {
+    "Id":2883953,
+    "Name":"Dicyclomine Hydrochloride",
+    "Price":81
+  },
+  {
+    "Id":2884042,
+    "Name":"Naproxen Sodium",
+    "Price":78
+  },
+  {
+    "Id":2885263,
+    "Name":"Gabapentin",
+    "Price":169
+  },
+  {
+    "Id":2885338,
+    "Name":"Erythromycin Ethylsuccinate",
+    "Price":101
+  },
+  {
+    "Id":2886732,
+    "Name":"ALCOHOL",
+    "Price":73
+  },
+  {
+    "Id":2886782,
+    "Name":"HYPROMELLOSE 2208 (15000 MPA.S)",
+    "Price":26
+  },
+  {
+    "Id":2886830,
+    "Name":"OCTINOXATE",
+    "Price":54
+  },
+  {
+    "Id":2887775,
+    "Name":"Amlodipine Besylate",
+    "Price":176
+  },
+  {
+    "Id":2890333,
+    "Name":"Octinoxate and Oxybenzone",
+    "Price":139
+  },
+  {
+    "Id":2890336,
+    "Name":"avobenzone",
+    "Price":131
+  },
+  {
+    "Id":2890808,
+    "Name":"OCTINOXATE AND AVOBENZONE",
+    "Price":119
+  },
+  {
+    "Id":2891737,
+    "Name":"SODIUM FLUORIDE",
+    "Price":28
+  },
+  {
+    "Id":2892017,
+    "Name":"guaifenesin",
+    "Price":123
+  },
+  {
+    "Id":2892198,
+    "Name":"Echinacea Essence",
+    "Price":158
+  },
+  {
+    "Id":2900114,
+    "Name":"Minoxidil",
+    "Price":191
+  },
+  {
+    "Id":2902115,
+    "Name":"FERROUS IODIDE",
+    "Price":77
+  },
+  {
+    "Id":2903782,
+    "Name":"Sulindac",
+    "Price":172
+  },
+  {
+    "Id":2907225,
+    "Name":"ezetimibe and simvastatin",
+    "Price":96
+  },
+  {
+    "Id":2908721,
+    "Name":"Cephalexin",
+    "Price":22
+  },
+  {
+    "Id":2913430,
+    "Name":"Dextromethorphan HBr",
+    "Price":103
+  },
+  {
+    "Id":2914060,
+    "Name":"Witch Hazel",
+    "Price":116
+  },
+  {
+    "Id":2917396,
+    "Name":"verapamil hydrochloride",
+    "Price":176
+  },
+  {
+    "Id":2932140,
+    "Name":"cosyntropin",
+    "Price":135
+  },
+  {
+    "Id":2940684,
+    "Name":"HOMOSALATE",
+    "Price":196
+  },
+  {
+    "Id":2941301,
+    "Name":"Oxygen",
+    "Price":71
+  },
+  {
+    "Id":2948259,
+    "Name":"acetic acid",
+    "Price":22
+  },
+  {
+    "Id":2955145,
+    "Name":"Levothyroxine Sodium",
+    "Price":14
+  },
+  {
+    "Id":2958770,
+    "Name":"tramadol hydrochloride",
+    "Price":120
+  },
+  {
+    "Id":2959309,
+    "Name":"TITANIUM DIOXIDE",
+    "Price":135
+  },
+  {
+    "Id":2960332,
+    "Name":"Ferrum phos",
+    "Price":89
+  },
+  {
+    "Id":2960340,
+    "Name":"Miconazole Nitrate",
+    "Price":194
+  },
+  {
+    "Id":2967233,
+    "Name":"CANDIDA PARAPSILOSIS and PENICILLIUM GLABRUM",
+    "Price":66
+  },
+  {
+    "Id":2977795,
+    "Name":"Baclofen",
+    "Price":155
+  },
+  {
+    "Id":2978886,
+    "Name":"MENTHOL",
+    "Price":49
+  },
+  {
+    "Id":2990681,
+    "Name":"BENZALKONIUM CHLORIDE",
+    "Price":145
+  },
+  {
+    "Id":2992258,
+    "Name":"Aminocaproic Acid",
+    "Price":110
+  },
+  {
+    "Id":3001806,
+    "Name":"OCTINOXATE",
+    "Price":105
+  },
+  {
+    "Id":3001985,
+    "Name":"Acetaminophen",
+    "Price":102
+  },
+  {
+    "Id":3005228,
+    "Name":"alcohol",
+    "Price":99
+  },
+  {
+    "Id":3022453,
+    "Name":"FOLIC ACID",
+    "Price":164
+  },
+  {
+    "Id":3030713,
+    "Name":"Cimetidine",
+    "Price":93
+  },
+  {
+    "Id":3033210,
+    "Name":"Burr Oak",
+    "Price":12
+  },
+  {
+    "Id":3037861,
+    "Name":"losartan potassium",
+    "Price":111
+  },
+  {
+    "Id":3040360,
+    "Name":"Alcohol",
+    "Price":165
+  },
+  {
+    "Id":3040510,
+    "Name":"Pseudoephedrine Hydrochloride",
+    "Price":46
+  },
+  {
+    "Id":3040728,
+    "Name":"Acetaminophen",
+    "Price":103
+  },
+  {
+    "Id":3046732,
+    "Name":"octinoxate",
+    "Price":157
+  },
+  {
+    "Id":3052315,
+    "Name":"Acetaminophen",
+    "Price":66
+  },
+  {
+    "Id":3052468,
+    "Name":"Octinoxate",
+    "Price":153
+  },
+  {
+    "Id":3059778,
+    "Name":"Acetaminophen",
+    "Price":158
+  },
+  {
+    "Id":3082570,
+    "Name":"Treatment Set TS345302",
+    "Price":143
+  },
+  {
+    "Id":3084009,
+    "Name":"Oxygen",
+    "Price":42
+  },
+  {
+    "Id":3091888,
+    "Name":"Arnica Plumbum Mel",
+    "Price":180
+  },
+  {
+    "Id":3114850,
+    "Name":"Octinoxate",
+    "Price":38
+  },
+  {
+    "Id":3116522,
+    "Name":"VANCOMYCIN HYDROCHLORIDE",
+    "Price":24
+  },
+  {
+    "Id":3116564,
+    "Name":"Avobenzone",
+    "Price":71
+  },
+  {
+    "Id":3127106,
+    "Name":"phenytoin",
+    "Price":87
+  },
+  {
+    "Id":3136922,
+    "Name":"Ammonia Inhalants",
+    "Price":131
+  },
+  {
+    "Id":3137940,
+    "Name":"EUCALYPTOL",
+    "Price":118
+  },
+  {
+    "Id":3140597,
+    "Name":"Echinacea",
+    "Price":196
+  },
+  {
+    "Id":3141668,
+    "Name":"Midazolam Hydrochloride",
+    "Price":144
+  },
+  {
+    "Id":3148513,
+    "Name":"Hydrocodone Bitartrate and Acetaminophen",
+    "Price":96
+  },
+  {
+    "Id":3149039,
+    "Name":"House Fly",
+    "Price":146
+  },
+  {
+    "Id":3150019,
+    "Name":"TITANIUM DIOXIDE",
+    "Price":128
+  },
+  {
+    "Id":3151161,
+    "Name":"TITANIUM DIOXIDE",
+    "Price":37
+  },
+  {
+    "Id":3156645,
+    "Name":"terbinafine hydrochloride",
+    "Price":109
+  },
+  {
+    "Id":3158230,
+    "Name":"Nicotine Polacrilex",
+    "Price":154
+  },
+  {
+    "Id":3166436,
+    "Name":"meloxicam",
+    "Price":193
+  },
+  {
+    "Id":3170679,
+    "Name":"Salicylic Acid",
+    "Price":177
+  },
+  {
+    "Id":3171420,
+    "Name":"OCTINOXATE",
+    "Price":139
+  },
+  {
+    "Id":3172427,
+    "Name":"RHODOTORULA RUBRA",
+    "Price":139
+  },
+  {
+    "Id":3189778,
+    "Name":"Ceftazidime",
+    "Price":68
+  },
+  {
+    "Id":3193388,
+    "Name":"Nortriptyline Hydrochloride",
+    "Price":108
+  },
+  {
+    "Id":3198174,
+    "Name":"Liothyronine Sodium",
+    "Price":56
+  },
+  {
+    "Id":3201951,
+    "Name":"Lisinopril",
+    "Price":199
+  },
+  {
+    "Id":3205947,
+    "Name":"Eszopiclone",
+    "Price":145
+  },
+  {
+    "Id":3207477,
+    "Name":"chlorothiazide",
+    "Price":60
+  },
+  {
+    "Id":3207803,
+    "Name":"Lisinopril and Hydrochlorothiazide",
+    "Price":33
+  },
+  {
+    "Id":3209503,
+    "Name":"Budesonide",
+    "Price":150
+  },
+  {
+    "Id":3210916,
+    "Name":"Loperamide Hydrochloride",
+    "Price":11
+  },
+  {
+    "Id":3216312,
+    "Name":"Calcium Carbonate",
+    "Price":102
+  },
+  {
+    "Id":3228138,
+    "Name":"Anticoagulant Citrate Phosphate Dextrose (CPD) Solution and ADSOL Preservation Solution",
+    "Price":147
+  },
+  {
+    "Id":3234149,
+    "Name":"Topiramate",
+    "Price":54
+  },
+  {
+    "Id":3242137,
+    "Name":"Belladonna",
+    "Price":147
+  },
+  {
+    "Id":3242683,
+    "Name":"AVOBENZONE",
+    "Price":64
+  },
+  {
+    "Id":3242700,
+    "Name":"Abrotanum",
+    "Price":187
+  },
+  {
+    "Id":3248363,
+    "Name":"Oxygen",
+    "Price":173
+  },
+  {
+    "Id":3254371,
+    "Name":"norethindrone and ethinyl estradiol",
+    "Price":57
+  },
+  {
+    "Id":3256132,
+    "Name":"Clozapine",
+    "Price":109
+  },
+  {
+    "Id":3256425,
+    "Name":"Alcohol",
+    "Price":15
+  },
+  {
+    "Id":3259142,
+    "Name":"Avobenzone",
+    "Price":92
+  },
+  {
+    "Id":3266656,
+    "Name":"Diltiazem Hydrochloride",
+    "Price":100
+  },
+  {
+    "Id":3298216,
+    "Name":"Acetaminophen",
+    "Price":92
+  },
+  {
+    "Id":3303258,
+    "Name":"Aluminum Hydroxide",
+    "Price":137
+  },
+  {
+    "Id":3306780,
+    "Name":"Calcium Balance",
+    "Price":159
+  },
+  {
+    "Id":3310032,
+    "Name":"Carvedilol",
+    "Price":33
+  },
+  {
+    "Id":3320516,
+    "Name":"menthol",
+    "Price":95
+  },
+  {
+    "Id":3321113,
+    "Name":"hydroquinone",
+    "Price":189
+  },
+  {
+    "Id":3324170,
+    "Name":"Glimepiride",
+    "Price":173
+  },
+  {
+    "Id":3328215,
+    "Name":"Ceftriaxone Sodium",
+    "Price":117
+  },
+  {
+    "Id":3329291,
+    "Name":"aspirin",
+    "Price":180
+  },
+  {
+    "Id":3329292,
+    "Name":"Gabapentin",
+    "Price":35
+  },
+  {
+    "Id":3333781,
+    "Name":"HAND SANITIZER",
+    "Price":119
+  },
+  {
+    "Id":3344118,
+    "Name":"Acetaminophen",
+    "Price":116
+  },
+  {
+    "Id":3345440,
+    "Name":"Octinoxate",
+    "Price":141
+  },
+  {
+    "Id":3359411,
+    "Name":"TRICLOSAN",
+    "Price":192
+  },
+  {
+    "Id":3362603,
+    "Name":"Nicotine polacrilex",
+    "Price":34
+  },
+  {
+    "Id":3362604,
+    "Name":"FLUOXETINE",
+    "Price":129
+  },
+  {
+    "Id":3365254,
+    "Name":"acetaminophen and phenylephrine hydrochloride",
+    "Price":195
+  },
+  {
+    "Id":3375884,
+    "Name":"Plumbum Mel.",
+    "Price":94
+  },
+  {
+    "Id":3385927,
+    "Name":"Dextrose monohydrate",
+    "Price":130
+  },
+  {
+    "Id":3402856,
+    "Name":"Adrenalinum",
+    "Price":11
+  },
+  {
+    "Id":3407543,
+    "Name":"PYRITHIONE ZINC",
+    "Price":111
+  },
+  {
+    "Id":3409205,
+    "Name":"Neomycin sulfate",
+    "Price":48
+  },
+  {
+    "Id":3425380,
+    "Name":"Grass Smut Mixture",
+    "Price":166
+  },
+  {
+    "Id":3428320,
+    "Name":"abacavir sulfate",
+    "Price":45
+  },
+  {
+    "Id":3433704,
+    "Name":"Diazepam",
+    "Price":99
+  },
+  {
+    "Id":3442770,
+    "Name":"Nicotine Polacrilex",
+    "Price":147
+  },
+  {
+    "Id":3442774,
+    "Name":"Anacardium orientale",
+    "Price":58
+  },
+  {
+    "Id":3469912,
+    "Name":"Nicotine Polacrilex",
+    "Price":92
+  },
+  {
+    "Id":3471024,
+    "Name":"temazepam",
+    "Price":167
+  },
+  {
+    "Id":3510613,
+    "Name":"sumatriptan succinate",
+    "Price":82
+  },
+  {
+    "Id":3514097,
+    "Name":"temazepam",
+    "Price":97
+  },
+  {
+    "Id":3542344,
+    "Name":"rOPINIRole",
+    "Price":29
+  },
+  {
+    "Id":3564207,
+    "Name":"Sodium Chloride",
+    "Price":164
+  },
+  {
+    "Id":3565443,
+    "Name":"Alprazolam",
+    "Price":14
+  },
+  {
+    "Id":3593578,
+    "Name":"Ciprofloxacin",
+    "Price":189
+  },
+  {
+    "Id":3595880,
+    "Name":"OCTINOXATE and TITANIUM DIOXIDE",
+    "Price":87
+  },
+  {
+    "Id":3631394,
+    "Name":"Ibuprofen",
+    "Price":41
+  },
+  {
+    "Id":3689310,
+    "Name":"alprazolam",
+    "Price":196
+  },
+  {
+    "Id":386118,
+    "Name":"gabapentin",
+    "Price":195
+  },
+  {
+    "Id":541788,
+    "Name":"Oxazepam",
+    "Price":110
+  },
+  {
+    "Id":541811,
+    "Name":"Hydrocortisone",
+    "Price":180
+  }
+]

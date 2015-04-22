@@ -1,0 +1,39 @@
+﻿@using Promotions.Models
+@model CatalogItemDetailsModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>@Model._item.Name</h2>
+<p>$@Model._item.Price</p>
+@if (Request.IsAuthenticated)
+{
+    <p><a class="btn btn-default buy-button" data-id="@Model._item.Id">Buy now!</a></p>
+}
+
+<h2>Related items</h2>
+<div class="row">
+    @{var items = Model._relatedItems.ToArray();}
+
+    @for (int i = 0; i < items.Length; i++)
+    {
+        var item = items[i];
+        if (i % 3 == 0 && i != 0)
+        {
+            Response.Write("</div><div class=\"row\">");
+            //</div>
+            //<div class="row">
+        }
+        <div class="col-md-4">
+            <h3><a href="@Url.Action("Details", "Home", new { Id = item.Id })">@item.Name</a></h3>
+            <p>$@item.Price</p>
+            @if (Request.IsAuthenticated)
+            {
+                <p><a class="btn btn-default buy-button" data-id="@item.Id">Buy now!</a></p>
+            }
+        </div>
+    }
+</div>
+
+

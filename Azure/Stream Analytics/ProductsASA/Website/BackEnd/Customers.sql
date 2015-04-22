@@ -1,0 +1,63 @@
+USE [ziv-promotions-db]
+GO
+
+IF OBJECT_ID('Customers') IS NOT NULL DROP TABLE Customers
+GO
+
+CREATE TABLE Customers(
+	Id BIGINT PRIMARY KEY NOT NULL,
+	Name NVARCHAR(40),
+	Region NVARCHAR(20)
+)
+GO
+
+INSERT INTO Customers VALUES(1, 'Asher Longstaff', 'South Carolina')
+INSERT INTO Customers VALUES(2, 'Scott Sutton', 'Colorado')
+INSERT INTO Customers VALUES(3, 'Rod Carlyle', 'Colorado')
+INSERT INTO Customers VALUES(4, 'Sawyer Blythe', 'Missouri')
+INSERT INTO Customers VALUES(5, 'Aric Everett', 'Missouri')
+INSERT INTO Customers VALUES(6, 'Sandy Tittensor', 'Michigan')
+INSERT INTO Customers VALUES(7, 'Ferdie Winthrop', 'Colorado')
+INSERT INTO Customers VALUES(8, 'Austen Arterbury', 'Idaho')
+INSERT INTO Customers VALUES(9, 'Ilbert Goode', 'Colorado')
+INSERT INTO Customers VALUES(10, 'Howard Carter', 'Michigan')
+INSERT INTO Customers VALUES(11, 'Art Parish', 'Idaho')
+INSERT INTO Customers VALUES(12, 'Theodore Goode', 'South Carolina')
+INSERT INTO Customers VALUES(13, 'Sid Bristow', 'Kansas')
+INSERT INTO Customers VALUES(14, 'Edwin Maynard', 'South Carolina')
+INSERT INTO Customers VALUES(15, 'Delano Thurstan', 'Kentucky')
+INSERT INTO Customers VALUES(16, 'Gladwin Smythe', 'South Carolina')
+INSERT INTO Customers VALUES(17, 'Stirling Courtenay', 'Arkansas')
+INSERT INTO Customers VALUES(18, 'Douglas Attaway', 'Kansas')
+INSERT INTO Customers VALUES(19, 'Jon Davidson', 'Kansas')
+INSERT INTO Customers VALUES(20, 'Connie Boon', 'Kansas')
+INSERT INTO Customers VALUES(21, 'Gabriel Banner', 'Kansas')
+INSERT INTO Customers VALUES(22, 'Easton Jans', 'Kentucky')
+INSERT INTO Customers VALUES(23, 'Walt Landon', 'Tennessee')
+INSERT INTO Customers VALUES(24, 'Dacre Hyland', 'Oregon')
+INSERT INTO Customers VALUES(25, 'Bobbie Rye', 'Kansas')
+INSERT INTO Customers VALUES(26, 'Thad Britton', 'South Carolina')
+INSERT INTO Customers VALUES(27, 'Aidan Blackburn', 'Kansas')
+INSERT INTO Customers VALUES(28, 'Andy Clemens', 'Kentucky')
+INSERT INTO Customers VALUES(29, 'Zavier Russell', 'Idaho')
+INSERT INTO Customers VALUES(30, 'Tex Knight', 'Colorado')
+INSERT INTO Customers VALUES(31, 'Boyce Vipond', 'Arkansas')
+INSERT INTO Customers VALUES(32, 'Tommy Bell', 'Kentucky')
+INSERT INTO Customers VALUES(33, 'Beaumont Gore', 'Kentucky')
+INSERT INTO Customers VALUES(34, 'Cosmo Courtney', 'Missouri')
+INSERT INTO Customers VALUES(35, 'Selwyn Jack', 'Michigan')
+INSERT INTO Customers VALUES(36, 'Quinn Scott', 'Missouri')
+INSERT INTO Customers VALUES(37, 'Clem Cropper', 'Colorado')
+INSERT INTO Customers VALUES(38, 'Teagan Joiner', 'Michigan')
+INSERT INTO Customers VALUES(39, 'Damion Boone', 'Colorado')
+INSERT INTO Customers VALUES(40, 'Elmo Hooper', 'Arkansas')
+INSERT INTO Customers VALUES(41, 'Ethelbert Oliverson', 'Michigan')
+INSERT INTO Customers VALUES(42, 'Davin Anthonyson', 'Missouri')
+INSERT INTO Customers VALUES(43, 'Windsor Hull', 'Idaho')
+INSERT INTO Customers VALUES(44, 'Robert Whittemore', 'Missouri')
+INSERT INTO Customers VALUES(45, 'Fulk Murgatroyd', 'Missouri')
+INSERT INTO Customers VALUES(46, 'Donovan Francis', 'Michigan')
+INSERT INTO Customers VALUES(47, 'Bryson Durand', 'Missouri')
+INSERT INTO Customers VALUES(48, 'Reilly Randell', 'Colorado')
+INSERT INTO Customers VALUES(49, 'Kent Kerry', 'Kansas')
+INSERT INTO Customers VALUES(50, 'Goddard Osborne', 'Colorado')

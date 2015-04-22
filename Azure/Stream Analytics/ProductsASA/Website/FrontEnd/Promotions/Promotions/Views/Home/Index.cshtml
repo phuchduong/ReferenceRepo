@@ -1,0 +1,32 @@
+﻿@using Promotions.Models
+@model CatalogModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Welcome to Microsoft store</h1>
+</div>
+
+<div class="row">
+    @{var items = Model._catalogItems.ToArray();}
+        
+    @for(int i = 0; i < items.Length; i++)
+    {
+        var item = items[i];
+        if(i % 3 == 0 && i != 0)
+        {
+            Response.Write("</div><div class=\"row\">");
+            //</div>
+            //<div class="row">
+        }
+        <div class="col-md-4">
+            <h2><a href="@Url.Action("Details", "Home", new { Id = item.Id })">@item.Name</a></h2>
+            <p>$@item.Price</p>
+            @if(Request.IsAuthenticated)
+            {
+                <p><a class="btn btn-default buy-button" data-id="@item.Id">Buy now!</a></p>
+            }
+        </div>
+    }
+</div>
