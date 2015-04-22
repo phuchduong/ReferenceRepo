@@ -1,2 +1,5 @@
 #untrack all files after updating an ignore file.
 git rm -r --cached .
+
+#show origin URL (or any other repo url)
+git remote show origin
