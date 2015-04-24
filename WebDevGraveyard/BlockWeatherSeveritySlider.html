@@ -1,0 +1,35 @@
+{# weather #}
+<div class="form-group">
+    <label for="weatherInput" class="control-label margin-bottom-10">
+    What is the current windspeed?</label>
+    <input id="weatherInput" type="text" name="weather" value=""/>
+</div>
+<script>
+    // initialize wind guage.
+    $("#weatherSlider").ionRangeSlider({
+        min: 0,
+        max: 60,
+        from: 13, // median
+        type: 'single',
+        step: 1,
+        postfix: " mph",
+        prettify: false,
+        hasGrid: true
+    });
+    // initialize wind guage.
+    $("#weatherInput").ionRangeSlider({
+        type: 'single',
+        grid_snap: true,
+        step: 1,
+        from: 0,
+        values: [
+            "Clear",
+            "Moderate",
+            "Severe"
+        ]
+        //,
+        //onFinish: function (data) {
+        //    alert(JSON.stringify(data));
+        //}
+    });
+</script>
