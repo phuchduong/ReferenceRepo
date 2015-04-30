@@ -1,0 +1,36 @@
+<input type="text" value="0" id="temp" />
+<input type="button" value="Send Temperature" onclick="sendTemperature()" />
+<label id="status"></label>
+<script type="text/javascript">
+function sendTemperature() {
+    // Generate a SAS key with the Signature Generator.: https://github.com/sandrinodimattia/RedDog/releases
+    // Could be provided by a Web API.
+    var sas = "SharedAccessSignature sr=https%3a%2f%2freddogeventhub.servicebus.windows.net%2ftemperature%2fpublishers%2fphone%2fmessages&sig=Luqu%2fZQd6rfhCdGPTZlhMYCVtXM51QWsdSVlc08LGWc%3d&se=1405564221&skn=SenderDevice";
+ 
+    var serviceNamespace = "reddogeventhub";
+    var hubName = "temperature";
+    var deviceName = "phone";
+ 
+    var xmlHttpRequest = new XMLHttpRequest();
+    xmlHttpRequest.open("POST", "https://" +
+        serviceNamespace + ".servicebus.windows.net/" + hubName + "/publishers/" + deviceName + "/messages", true);
+    xmlHttpRequest.setRequestHeader('Content-Type',
+        "application/atom+xml;type=entry;charset=utf-8");
+    xmlHttpRequest.setRequestHeader("Authorization", sas);
+ 
+    xmlHttpRequest.onreadystatechange = function () {
+        if (this.readyState == 4) {
+ 
+            if (this.status == 201) {
+                document.getElementById('status').innerText =
+                    'Sent: ' + document.getElementById('temp').value;
+            } else {
+                document.getElementById('status').innerText =
+                    this.status;
+            }
+        }
+    };
+ 
+    xmlHttpRequest.send("{ Temperature: " + document.getElementById('temp').value + " }");
+}
+</script>
