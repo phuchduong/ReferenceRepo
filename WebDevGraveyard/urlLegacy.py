@@ -1,0 +1,10 @@
+urlpatterns = patterns('',
+    #url(r'^app/twitter-stream-broker/$', views.renderTwitterStreamBroker, name='twitter-stream-broker'),
+    #url(r'^add-your-own-model/$', views.renderRegisterGuestModel, name='register-guest-model'),
+    #url(r'^add-your-own-model/register/$', views.registerGuestModel, name='register-guest-model'),
+    #url(r'^guest-demo/(?P<guestExperimentName>[0-9A-Za-z]+)/$', views.render_guest_demo, name='render-guest-demo'),
+    #url(r'^guest-demo/(?P<guestExperimentName>[0-9A-Za-z]+)/predict/$', views.guest_prediction, name='guest-guest-prediction'),
+	#url(r'^app/event-hub-sender/', views.renderEventHubSender, name='event-hub-sender'),
+    #url(r'^app/credit-card-streamer/$', views.renderCreditCardStreamer, name='credit-card-streamer'),
+    #url(r'^app/event-hub-dashboard/$', views.renderEventHubDashboard, name='event-hub-dashboard'),
+)
