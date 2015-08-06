@@ -8,17 +8,19 @@ https://www.python.org/download/releases/2.7/
 ### Scipy with Windows Binaries for Python 2.7
 http://www.lfd.uci.edu/~gohlke/pythonlibs/ </br>
 file: scipy-0.16.0-cp27-none‑win_amd64.whl
+<code>pip install C:\MyLocation\scipy-0.16.0-cp27-none‑win_amd64.whl</code>
 
 ### Numpy MKL with Windows Binaries for Python 2.7
 http://www.lfd.uci.edu/~gohlke/pythonlibs/  </br>
 file: numpy-1.9.2+mkl-cp27-none-win_amd64.whl
+<code>pip install C:\MyLocation\numpy-1.9.2+mkl-cp27-none-win_amd64.whl/code>
 
 ### sklearn
 <code>pip install sklearn</code>
 
 ## Random Forest
 <pre><code>
-\# Import the random forest package
+# Import the random forest package
 from sklearn.ensemble import RandomForestClassifier 
 
 # Create the random forest object which will include all the parameters
