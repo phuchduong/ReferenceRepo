@@ -18,6 +18,11 @@ file: numpy-1.9.2+mkl-cp27-none-win_amd64.whl </br>
 ### sklearn
 <code>pip install sklearn</code>
 
+# Machine Learning
+
+## Intro to Python for Data Science
+[Source: Kaggle](https://www.kaggle.com/c/titanic/details/getting-started-with-python "Kaggle Intro to Python")
+
 ## Random Forest
 [Source: Kaggle](https://www.kaggle.com/c/titanic/details/getting-started-with-random-forests "Kaggle Random Forest") <br>
 <pre><code>
