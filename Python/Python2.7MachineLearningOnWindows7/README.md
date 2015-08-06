@@ -18,7 +18,7 @@ file: numpy-1.9.2+mkl-cp27-none-win_amd64.whl
 
 ## Random Forest
 <code>
-# Import the random forest package
+\# Import the random forest package
 from sklearn.ensemble import RandomForestClassifier 
 
 # Create the random forest object which will include all the parameters
