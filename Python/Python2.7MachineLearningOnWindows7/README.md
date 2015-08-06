@@ -17,7 +17,7 @@ file: numpy-1.9.2+mkl-cp27-none-win_amd64.whl
 <code>pip install sklearn</code>
 
 ## Random Forest
-<code>
+<pre><code>
 \# Import the random forest package
 from sklearn.ensemble import RandomForestClassifier 
 
@@ -30,4 +30,4 @@ forest = forest.fit(train_data[0::,1::],train_data[0::,0])
 
 # Take the same decision trees and run it on the test data
 output = forest.predict(test_data)
-</code>
+</code></pre>
