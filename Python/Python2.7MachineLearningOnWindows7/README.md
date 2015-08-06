@@ -6,11 +6,11 @@
 https://www.python.org/download/releases/2.7/
 
 ### Scipy with Windows Binaries for Python 2.7
-http://www.lfd.uci.edu/~gohlke/pythonlibs/
+http://www.lfd.uci.edu/~gohlke/pythonlibs/ </br>
 file: scipy-0.16.0-cp27-none‑win_amd64.whl
 
 ### Numpy MKL with Windows Binaries for Python 2.7
-http://www.lfd.uci.edu/~gohlke/pythonlibs/
+http://www.lfd.uci.edu/~gohlke/pythonlibs/  </br>
 file: numpy-1.9.2+mkl-cp27-none-win_amd64.whl
 
 ### sklearn
