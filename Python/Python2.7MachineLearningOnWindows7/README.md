@@ -19,6 +19,7 @@ file: numpy-1.9.2+mkl-cp27-none-win_amd64.whl </br>
 <code>pip install sklearn</code>
 
 ## Random Forest
+[Source: Kaggle](https://www.kaggle.com/c/titanic/details/getting-started-with-random-forests "Kaggle Random Forest") <br>
 <pre><code>
 # Import the random forest package
 from sklearn.ensemble import RandomForestClassifier 
