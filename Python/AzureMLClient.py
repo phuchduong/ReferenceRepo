@@ -2,6 +2,7 @@ class AzureMLClient:
 	import urllib2
 	import json
 
+
 	def __init__(self):
 		self.apiKey = ''
 		self.postURL = ''
@@ -20,11 +21,14 @@ class AzureMLClient:
 		   "GlobalParameters":{}
 		}
 
+
 	def makePrediction(self):
 		if(validSchema == 'valid'):
+			prediction = sendResponse()
+			return prediction
 		else:
-			return ''
-			
+			return messageReport
+
 
 	def validSchema():
 		messageList = []
@@ -39,10 +43,11 @@ class AzureMLClient:
 
 		if(if not messageList):
 			messageReport = ''.join(messageList)
-			print messageReport
-			return 'invalid'
+			print messageReport # Logs error server side.
+			return messageReport
 		else
 			return 'valid'
+
 
 	# Builds the request body from the base, column names and values
     def buildSchema(self):
@@ -50,6 +55,7 @@ class AzureMLClient:
     	schemaJSON['Inputs']['input1']['ColumnNames'] = self.columnNames
     	schemaJSON['Inputs']['input1']['Values'] = self.requestBody
     	return schemaJSON
+
 
 	def sendResponse(self):
 		schemaJSON = buildSchema()
