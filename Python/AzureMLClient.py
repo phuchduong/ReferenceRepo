@@ -60,7 +60,7 @@ class AzureMLClient:
 	def sendResponse(self):
 		schemaJSON = buildSchema()
 		schemaStr = str(schemaJSON)
-    	schemaEnc = str.encode(schemaStr)
+		schemaEnc = str.encode(schemaStr)
 		authorizationHeader = {'Content-Type':'application/json', 'Authorization':('Bearer '+ self.apiKey)}
 	    payload = urllib2.Request(self.postURL, schemaEnc, authorizationHeader) 
 	    response = urllib2.urlopen(payload)
