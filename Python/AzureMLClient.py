@@ -8,18 +8,18 @@ class AzureMLClient:
 		self.postURL = ''
 		self.columnNames = []
 		self.requestBody = []
-		self.schemaBase = {  
-		   "Inputs":{  
-		      "input1":{  
-		         "ColumnNames":[  
-		            # insert headers here, columnNames
-		         ],
-		         "Values":[ #insert answers here, requestBody
-		         ]
-		      }
-		   },
-		   "GlobalParameters":{}
-		}
+		self.schemaBase = {
+				"Inputs":{  
+					"input1":{  
+						"ColumnNames":[  
+							# insert headers here, columnNames
+						],
+						"Values":[ #insert answers here, requestBody
+						]
+					}
+				},
+				"GlobalParameters":{}
+			}
 
 
 	def makePrediction(self):
@@ -50,11 +50,11 @@ class AzureMLClient:
 
 
 	# Builds the request body from the base, column names and values
-    def buildSchema(self):
-    	schemaJSON = JSON.dumps(self.schemaBase)
-    	schemaJSON['Inputs']['input1']['ColumnNames'] = self.columnNames
-    	schemaJSON['Inputs']['input1']['Values'] = self.requestBody
-    	return schemaJSON
+	def buildSchema(self):
+		schemaJSON = JSON.dumps(self.schemaBase)
+		schemaJSON['Inputs']['input1']['ColumnNames'] = self.columnNames
+		schemaJSON['Inputs']['input1']['Values'] = self.requestBody
+		return schemaJSON
 
 
 	def sendResponse(self):
@@ -62,6 +62,6 @@ class AzureMLClient:
 		schemaStr = str(schemaJSON)
 		schemaEnc = str.encode(schemaStr)
 		authorizationHeader = {'Content-Type':'application/json', 'Authorization':('Bearer '+ self.apiKey)}
-	    payload = urllib2.Request(self.postURL, schemaEnc, authorizationHeader) 
-	    response = urllib2.urlopen(payload)
-	    return response
+		payload = urllib2.Request(self.postURL, schemaEnc, authorizationHeader) 
+		response = urllib2.urlopen(payload)
+		return response
