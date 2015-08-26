@@ -24,7 +24,7 @@ def azureml_main(dataframe1 = None, dataframe2 = None):
         feature_vector = [0] * (len(word_dict) + 1)
         for word in item:
             feature_vector[word_dict[word]+1] = 1
-        feature_vector[0] = dataframe1["Col1"][index]
+        feature_vector[0] = dataframe1["text_column"][index]
         feature_vector_list.append(feature_vector)
       # convert feature vector to dataframe object
     dataframe_output = pd.DataFrame(np.array(feature_vector_list), columns=['rating']+word_dict.keys())
