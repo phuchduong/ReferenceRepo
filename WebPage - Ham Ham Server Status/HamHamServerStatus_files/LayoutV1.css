@@ -1,0 +1,383 @@
+﻿
+
+
+/******************************
+ *          %GLOBAL           *
+ ******************************/
+.Frame
+{
+	width: 820px;
+	margin: 0 auto;
+}
+
+/* In order to avoid placing empty clear="all" elements in our markup,
+	we're going to force them to be added using the :last-child and :after
+	selectors via the css file. This should keep our HTML nice and clean.*/
+.Frame:last-child:after
+{
+	content: '.'; /* The content to punch it out */
+	display: block; /* Needs to be block to force the bottom */
+	height: 0; /* We don't want it affecting our layout */
+	clear: both; /* Of course, clear the floats */
+	visibility: hidden; /* We don't want anyone seeing the character */
+}
+
+.Icon
+{
+	display: block;
+	float: left;
+}
+
+.Content:after
+{ 
+	content: '.'; /* The content to punch it out */
+	display: block; /* Needs to be block to force the bottom */
+	height: 0; /* We don't want it affecting our layout */
+	clear: both; /* Of course, clear the floats */
+	visibility: hidden; /* We don't want anyone seeing the character */
+}
+
+.Button.Submit { display: block; float: right; }
+
+label ,
+.Label
+{ 
+	display: block;
+	float: left;
+	text-align: left;
+	cursor: default;
+}
+label.Above,
+.Label.Above
+{
+	padding-top: 0px;
+	margin-bottom: 5px;
+}
+
+.TextBox
+{
+	display: block;
+/*	float: right;*/
+	margin-left: 115px;
+}
+
+label.Above ~ .TextBox,
+.Label.Above ~ .TextBox 
+{
+	clear: both;
+	margin-left: 0px;
+}
+
+.TextBox input,
+.TextBox textarea
+{
+	width: 100%;
+}
+
+.TextBox:after
+{
+	content: '.'; /* The content to punch it out */
+	display: block; /* Needs to be block to force the bottom */
+	height: 0; /* We don't want it affecting our layout */
+	clear: both; /* Of course, clear the floats */
+	visibility: hidden; /* We don't want anyone seeing the character */
+}
+.CheckBox input,
+.CheckBoxes input,
+.CheckBox label,
+.CheckBoxes label,
+.RadioButton input,
+.RadioButtons input,
+.RadioButton label,
+.RadioButtons label
+{
+	display: block;
+}
+
+.CheckBox,
+.CheckBoxes td,
+.RadioButton,
+.RadioButtons td
+{
+	display: block;
+	position: relative;
+}
+
+.CheckBox label,
+.CheckBoxes label,
+.RadioButton label,
+.RadioButtons label
+{
+	position: relative;
+	margin-left: 22px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.CheckBox input,
+.CheckBoxes input,
+.RadioButton input,
+.RadioButtons input
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.CheckBox:after
+{
+	content: '.'; /* The content to punch it out */
+	display: block; /* Needs to be block to force the bottom */
+	height: 0; /* We don't want it affecting our layout */
+	clear: both; /* Of course, clear the floats */
+	visibility: hidden; /* We don't want anyone seeing the character */
+}
+
+.Label~.RadioButtons,
+.Label~.CheckBoxes
+{
+	margin-left: 115px;
+	display: block;
+}
+
+.Label~.RadioButtons input,
+.Label~.CheckBoxes input
+{
+	margin-left: 0px;
+}
+
+
+.Select
+{
+	margin-left: 115px;
+    position: relative;
+}
+        
+.Select .DropDown
+{
+    position: absolute;
+    z-index: 500;
+}
+
+.Hidden
+{
+	display: none !important;
+	visibility: hidden !important;
+}
+
+/* I've made these important as they need to *always* be in effect. */
+@media handheld, screen and (max-device-width: 480px) and (min-device-width: 320px)
+{
+	.ScreenOnly
+	{
+		display: none !important;
+		visibility: hidden !important;	
+	}
+}
+@media not screen and (max-device-width: 480px) and (min-device-width: 320px)
+{
+	.MobileOnly
+	{
+		display: none !important;
+		visibility: hidden !important;
+	}
+}
+/******************************
+ *          %HEADER           *
+ ******************************/
+.Header
+{
+	height: 123px;
+}
+
+.Header .Logo
+{
+	float: left;
+}
+
+.Header ul
+{
+	float: left;
+	margin: 30px 0 0 0;
+}
+
+.Header li
+{
+	float: left;
+	display: block;
+	height: 38px;
+	width: 170px;
+}
+
+.Header li a
+{
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	line-height: 40px;
+}
+
+
+/******************************
+ *          %FOOTER           *
+ ******************************/
+.Footer
+{
+	height: 337px;
+}
+
+.Footer .Categories
+{
+	/* Our :last-child:after trick of clearing floats won't work here,
+		because ULs should only contain LIs (other things are ignored).
+		So we'll use another trick that forces the container to reevaluate
+		its children and surround them: overflow:auto.
+		We don't do this above, because in the above situation it causes
+		scrollbars to be created.*/
+	overflow: auto;
+	
+	margin: 0 20px;
+	padding: 40px 0 48px;
+}
+
+.Footer .Category
+{
+	display: block;
+	float: left; 
+	width: 210px;
+	padding-right: 24px;
+}
+
+.Footer .Category:last-child
+{
+	padding-right: 0px;
+}
+.Footer .Legal
+{
+	padding: 15px;
+}
+
+.Footer .Legal:after
+{ 
+	content: '.'; /* The content to punch it out */
+	display: block; /* Needs to be block to force the bottom */
+	height: 0; /* We don't want it affecting our layout */
+	clear: both; /* Of course, clear the floats */
+	visibility: hidden; /* We don't want anyone seeing the character */
+}
+
+.Footer .Copyright
+{
+	float: left;	
+}
+
+.Footer .Downloads
+{
+	float: right;
+}
+
+
+/******************************
+ *          %BODY           *
+ ******************************/
+
+.Body
+{
+}
+/* A body normally contains Vertical Segments or Horizontal Segments, 
+	but can contain both. Segments then contain one or more Containers,
+	or other Segments
+
+	Horizontal - Normally spans the width of the page. Multiple Horizontal
+				 Segments are stacked vertically. 
+	Vertical   - Normally spans the height of the page. Multiple Veritcal
+			     Segments are stacked horizontally.
+	Container  - Placed inside Segments. Stacked based on orientation of 
+				 its parent. Horizontal generally contain up to three 
+				 containers, while Vertical can contain many more individually. 
+
+   Columns are spaced out in Segments based on a combination of the classes
+	OneColumn, TwoColumn, ThreeColumn, Dominant and Subordinate.
+	
+	OneColumn   - Contains only one Container per width of page, which is 
+				  implicitly Dominant
+	TwoColumn   - Contains two Containers per width of page, one of which is
+				  Dominant and one is Subordinate
+	ThreeColumn - Contains three Containers per width of page, one of which
+				  is Dominant, while the other two are Subordinate
+
+   Optionally, in a two or three column design, instead of using Dominant and
+	Subordinate, the class Peer can be used, which will split the view evenly
+	between all Peers. Note that Peer should not be mixed with Dominant or
+	Subordinate.
+*/
+
+
+/******************************
+ *         %STRUCTURE         *
+ ******************************/
+
+.Horizontal .Container,
+.Vertical
+{
+	float: left;
+}
+
+.Vertical .Container
+{
+	float: none;
+}
+
+/* In order to avoid placing empty clear="all" elements in our markup,
+	we're going to force them to be added using the :after
+	selectors via the css file. This should keep our HTML nice and clean.*/
+.Horizontal:after
+{
+	content: '.'; /* The content to punch it out */
+	display: block; /* Needs to be block to force the bottom */
+	height: 0; /* We don't want it affecting our layout */
+	clear: both; /* Of course, clear the floats */
+	visibility: hidden; /* We don't want anyone seeing the character */
+}
+
+.OneColumn .Container { width: 100%; }
+
+.TwoColumn .Dominant { width: 65%; }
+.TwoColumn .Subordinate { width: 35%; }
+.TwoColumn .Peer { width: 50%; }
+
+.ThreeColumn .Dominant { width: 50%; }
+.ThreeColumn .Subordinate { width: 25%; }
+.ThreeColumn .Peer { width: 33%; }
+/* Due to our current width 920px not being divisable by 100, we need to 
+	add the extra somewhere. This somewhere is in the margin around the 
+	center peer. */
+.ThreeColumn .Peer:nth-child(2) { width: 34%; /*margin: 0 1px;*/ } /* Due to rounding differences in browsers, Chrome will have to deal with the extra space; fixing it screws layout in FF + IE*/
+
+
+/******************************
+ *           %MODEL           *
+ ******************************/
+ 
+.Model
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.Model .Frame
+{
+	position: static;
+	margin: 80px auto;
+	width: 650px;
+}
+
+/* Model width is different, so we need to update this margin to keep 
+wrapping from happening. */
+.Model .ThreeColumn .Peer:nth-child(2) { margin: 0; }

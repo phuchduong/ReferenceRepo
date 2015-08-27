@@ -1,0 +1,1404 @@
+﻿/*******************************************
+	Colors:
+	Background (approximate): #232526
+	Font: #ffffff
+	      #333333
+		  #3786d5 (Links)
+	Header Nav: (Hover/Depressed): #191a1b
+    Header Pills: #303030 -> #1C1C1C
+		Hover:	#404040 -> #2C2C2C
+		
+	Body Main: #ffffff
+	Neutral Accent: #686868
+	SubAccent: #ececec (cookie crumb section);
+	Text (Neutral): #333333
+		 (Ventrilo): #4FA729
+		 (Mumble): #0989E7
+		 (TeamSpeak): #06F2EB2
+ *******************************************/
+ 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Open+Sans+Condensed:300,700|Orbitron:400);
+ 
+body
+{
+	background: #232526 url(/Content/Images/BackgroundV1.jpg) 0 0 repeat;
+	
+	color: #ffffff;
+}
+
+hr { border-color: #D6D6D6; }
+ 
+h1, h2, h3, h4, ol
+{
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-shadow: -1px -1px 1px white;
+}
+
+h2, h3, h4, ol
+{
+	margin-top: 24px;
+}
+
+h1 { font-size: 44px; line-height: 48px; padding-bottom: 20px; }
+h2 { font-size: 30px; line-height: 32px; padding-bottom: 12px; }
+h3 { font-size: 24px; padding-bottom: 10px; }
+h4 { font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: bold; padding-bottom: 5px; }
+ol { font-size: 20px; margin-top: 0; list-style-type: none; position: relative; counter-reset: level1 level2;}
+
+ol>li { counter-increment: level1; margin-left: 38px; min-height: 20px; margin-bottom: 20px;}
+ol>li:before 
+{
+	position: absolute;
+	left: 0px;
+	content: counter(level1);
+	float: left;
+	text-align: right;
+	width: 20px;
+	margin-right: 15px;
+	line-height: 19px;
+}
+
+ol>li ol>li { counter-increment: level2; }
+ol>li ol>li:before 
+{
+	position: absolute;
+	left: 0px;
+	content: counter(level2);
+	float: left;
+	text-align: right;
+	width: 20px;
+	margin-right: 15px;
+	line-height: 19px;
+}
+
+h2.SubText { color: #717171; margin-left: 0px; margin-top: 0px; }
+h2.FldText { margin-left: 23px; }
+
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, ol:first-child
+{
+	margin-top: 0;
+}
+
+p { padding-bottom: 10px; }
+p:last-child { padding-bottom: 0px; }
+ 
+ol>li>p { font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #333333; padding-bottom: 3px; }
+ol>li>em { font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #717171; font-style: italic; }
+
+p.SectionText { font-size: 20px; font-family: 'Open Sans Condensed', sans-serif; }
+ 
+a
+{
+	color: #3786d5;	
+	text-decoration: underline;
+}
+ 
+/*********************************************************************************
+ * Header
+ *********************************************************************************/
+ 
+.Header .Bounds
+{
+	padding-top: 47px;
+	padding-left: 24px;
+	padding-bottom: 23px; 
+	position: relative;
+} 
+.Header li a.HeaderLink
+{
+  text-decoration: none;
+  text-shadow: -1px -1px 1px #000000;
+  font-size: 15px;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  color: #FFFFFF
+}
+
+.Header .Navigation
+{
+	width: 372px; /* total width = 452px; */
+	padding: 11px 40px 0 30px;
+	margin: 0;
+}
+.Header .Navigation>li
+{
+	position: relative;
+	width: auto;
+	padding: 0 15px;
+}
+.Header .Navigation>li>a
+{
+	width: auto;
+	height: auto;
+	padding: 7px 13px;
+	line-height: inherit;
+}
+
+.Header .Navigation>li>a:hover
+{
+	color: white;
+	padding: 6px 12px;
+	background-color: #191A1B;
+	border-radius: 5px;
+	border-top: 1px solid rgba(0,0,0,0.5); 
+	border-left: 1px solid rgba(0,0,0,0.5); 
+	border-bottom: 1px solid rgba(255,255,255,0.08); 
+	border-right: 1px solid rgba(255,255,255,0.08); 
+}
+
+
+.Header .Pills
+{
+	border-radius: 4px;
+	height: 40px;
+	margin: 7px 0 0;
+	box-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+	position: absolute;
+	right: 0;
+}
+.Header .Pills>li
+{
+	background: #1C1C1C; /* Old browsers */
+	background: -moz-linear-gradient(top,  #303030 0%, #1c1c1c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#303030), color-stop(100%,#1c1c1c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #303030 0%,#1c1c1c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #303030 0%,#1c1c1c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #303030 0%,#1c1c1c 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #303030 0%,#1c1c1c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303030', endColorstr='#1c1c1c',GradientType=0 ); /* IE6-9 */
+	
+	width: auto;
+	height: 39px;
+	border-radius: 4px;	
+	border-top: 1px solid rgba(255,255,255,0.15);
+	border-left: 1px solid rgba(255,255,255,0.05);
+}
+.Header .Pills>li:hover
+{
+	background: #404040; /* Old browsers */
+	background: -moz-linear-gradient(top,  #404040 0%, #2c2c2c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#404040), color-stop(100%,#2c2c2c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #404040 0%,#2c2c2c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #404040 0%,#2c2c2c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #404040 0%,#2c2c2c 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #404040 0%,#2c2c2c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#404040', endColorstr='#2c2c2c',GradientType=0 ); /* IE6-9 */
+}
+
+.Header .Pills>li.CustomerSupport
+{
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	width: 192px; 
+	border-right: 1px solid rgba(0,0,0,0.4);
+}
+
+.Header .Pills>li.ControlPanel
+{
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	width: 120px; 
+	border-left: 1px solid rgba(255,255,255,0.07);
+}
+
+.Header .Pills>li a.HeaderLink
+{
+	padding: 4px 0 7px;
+	height: 24px;
+	line-height: 28px;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+.Header .Pills>li a:hover
+{
+	color: white;	
+}
+
+.Header .Pills>li.CustomerSupport a.HeaderLink
+{
+	padding-left: 10px;
+	width: 172px;	
+}
+
+.Header .Pills>li.CustomerSupport .Icon
+{
+	display: block;
+	width: 32px;
+	height: 32px;
+	background: transparent url(/Content/Images/IconSpritesV3.png) -64px 0px no-repeat;
+	text-shadow: none;
+	font-family: Arial, Sans-Serif;
+	font-weight: bold;
+	position: relative;
+}
+.Header .Pills>li.CustomerSupport .Icon.Notifications
+{
+	background: transparent url(/Content/Images/IconSpritesV3.png) -64px -1856px no-repeat;
+}
+.Header .Pills>li.CustomerSupport .Icon.Notifications.Mumble { background-position: -64px -832px; }
+.Header .Pills>li.CustomerSupport .Icon.Notifications.Ventrilo { background-position: -64px -1792px; }
+.Header .Pills>li.CustomerSupport .Icon.Notifications.TeamSpeak { background-position: -64px -1824px; }
+
+.Header .Pills>li.CustomerSupport .Icon.Extra
+{
+	position: absolute;
+}
+
+.Header .Navigation .DropDown
+{
+	border: 1px solid #1C1C1C;
+	position: absolute;
+	width: 210px;
+    z-index: 2;
+	left: -49px;
+	top: 48px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-radius: 3px;
+	z-index: 10;
+}
+
+.Header .Navigation .DropDown>ul
+{
+	background: rgba(53,53,53,0.96); /* #353535 */
+	box-shadow: 0px 1px 1px rgba(255,255,255,0.1) inset;
+	margin-top: 0;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	border-bottom: 1px solid #525252;
+	float: none;
+}
+
+.Header .Navigation .DropDown li
+{
+	display:  block;
+	height: auto;
+	width: auto;
+	float: none;
+}
+
+.Header .Navigation .DropDown li a
+{
+	display: block;
+	text-align: left;
+	text-indent: 5px;
+	font-size: 14px;
+}
+
+.Header .Navigation .DropDown a:hover
+{
+	text-decoration: underline;
+}
+
+.Header .Navigation .DropDown li a .Icon
+{
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	background: transparent url(/Content/Images/IconSpritesV3.png) -64px -32px no-repeat;
+	margin-top: 5px;
+}
+.Header .Navigation .DropDown li a.Mumble .Icon { background-position: -64px -32px; }
+.Header .Navigation .DropDown li a.Ventrilo .Icon { background-position: -64px -64px; }
+.Header .Navigation .DropDown li a.TeamSpeak .Icon { background-position: -64px -96px; }
+
+
+.Header .Navigation .DropDown .LastOption
+{
+	text-align: center;
+	text-indent: 0;
+	background: rgba(37,37,37,0.96); /* #353535 */
+	border-top: 1px solid #1D1D1D;
+}
+
+.Header .Navigation .DropDown .Pointer
+{
+	position: absolute;
+	background: transparent url(/Content/Images/IconSpritesV3.png) -64px -128px no-repeat;
+	width: 32px;
+	height: 32px;
+	top: -21px;
+	left: 89px;
+}
+.Header .Navigation .Billing { width: 220px; }
+.Header .Navigation .Billing .Pointer { left: 95px; }
+.Header .Navigation .Download { width: 255px; }
+.Header .Navigation .Download .Pointer { left: 100px; }
+
+.Header .Navigation .DropDown li.Mumble a.Renew .Icon { background-position: -64px -1312px; }
+.Header .Navigation .DropDown li.Mumble a.Invoice .Icon { background-position: -64px -1408px; }
+.Header .Navigation .DropDown li.Mumble a.Upgrade .Icon { background-position: -64px -1504px; }
+.Header .Navigation .DropDown li.Mumble a.Downgrade .Icon { background-position: -64px -1600px; }
+.Header .Navigation .DropDown li.Mumble a.Cancel .Icon { background-position: -64px -1696px; }
+
+.Header .Navigation .DropDown li.Ventrilo a.Renew .Icon { background-position: -64px -1344px; }
+.Header .Navigation .DropDown li.Ventrilo a.Invoice .Icon { background-position: -64px -1440px; }
+.Header .Navigation .DropDown li.Ventrilo a.Upgrade .Icon { background-position: -64px -1536px; }
+.Header .Navigation .DropDown li.Ventrilo a.Downgrade .Icon { background-position: -64px -1632px; }
+.Header .Navigation .DropDown li.Ventrilo a.Cancel .Icon { background-position: -64px -1728px; }
+
+.Header .Navigation .DropDown li.TeamSpeak a.Renew .Icon { background-position: -64px -1376px; }
+.Header .Navigation .DropDown li.TeamSpeak a.Invoice .Icon { background-position: -64px -1472px; }
+.Header .Navigation .DropDown li.TeamSpeak a.Upgrade .Icon { background-position: -64px -1568px; }
+.Header .Navigation .DropDown li.TeamSpeak a.Downgrade .Icon { background-position: -64px -1664px; }
+.Header .Navigation .DropDown li.TeamSpeak a.Cancel .Icon { background-position: -64px -1760px; }
+
+
+.Header .Pills>li { position: relative; }
+.Header .Pills .DropDown
+{
+	border: 1px solid #1C1C1C;
+	border-top: none;
+	position: absolute;
+
+	right: -1px;
+	top: 41px;
+	z-index: 2;
+	
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	
+	background: rgba(53,53,53,0.96); /* #353535 */
+	margin-top: 0;
+	padding: 15px;
+	z-index: 10;
+}
+
+
+.Header .Pills .DropDown .Field
+{
+	width: 230px;
+}
+
+.Header .Pills .CustomerSupport .DropDown
+{
+	padding: 0;
+}
+
+.Header .Pills .CustomerSupport .DropDown .ContactUs,
+.Header .Pills .CustomerSupport .DropDown .Notifications
+{
+	font-family: 'Open Sans', Sans-Serif;
+	font-size: 11px;
+	width: 331px;
+	margin: 0;
+	float: none;
+	padding: 15px 15px 5px 15px;
+}
+
+.Header .Pills .CustomerSupport .DropDown .Notifications
+{
+	background: rgba(37,37,37,0.96); /* #353535 */
+	border-top: 1px solid #1D1D1D;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	width: 322px;
+	
+	padding: 10px 15px 10px 24px;
+}
+
+.Header .Pills .CustomerSupport .DropDown .Notifications a
+{
+	text-align: left;
+	color: White;
+	display: inline;
+}
+
+.Header .Pills .CustomerSupport .DropDown .ContactUs li
+{
+	width: 331px;
+	float: none;
+	height: 55px;
+}
+
+.Header .Pills .CustomerSupport .DropDown .ContactUs .Information
+{
+	width: 170px;
+	height: 45px;
+	padding: 5px 0;
+	float: left;
+}
+
+.Header .Pills .CustomerSupport .DropDown .Notifications>div
+{
+	height: 30px;
+}
+
+.Header .Pills .CustomerSupport .DropDown .Notifications>div.Clear
+{
+	text-align: right;
+}
+.Header .Pills .CustomerSupport .DropDown .ContactUs h4,
+.Header .Pills .CustomerSupport .DropDown .Notifications h4
+{
+	font-family: 'Open Sans', Sans-Serif;
+	font-weight: normal;
+	text-shadow: -1px -1px 1px #000000;
+	padding: 0;
+}
+.Header .Pills .CustomerSupport .DropDown .ContactUs .Icon
+{
+	margin: 5px 15px 15px 0;
+	background-position: -64px -32px;
+}
+.Header .Pills .CustomerSupport .DropDown .ContactUs .LiveChat .Icon { background-position: -64px -864px; }
+.Header .Pills .CustomerSupport .DropDown .ContactUs .Email .Icon { background-position: -64px -896px; }
+.Header .Pills .CustomerSupport .DropDown .ContactUs .Telephone .Icon { background-position: -64px -928px; }
+
+.Header .Pills .CustomerSupport .DropDown .ContactUs a
+{
+	width: 100px;
+	height: 32px;
+	line-height: 20px;
+	float: right;
+	margin-top: 6px;
+}
+
+.Header .Pills .CustomerSupport .DropDown .Notifications .Icon
+{
+	width: 20px;
+	height: 20px;
+	background-position: -96px 0px;
+	margin: 10px 15px 0 -5px;
+}
+.Header .Pills .CustomerSupport .DropDown .Notifications .Support .Icon { background-position: -96px -1220px; }
+.Header .Pills .CustomerSupport .DropDown .Notifications .Billing .Icon { background-position: -96px -1240px; }
+.Header .Pills .CustomerSupport .DropDown .Notifications .Friends .Icon { background-position: -96px -1260px; }
+
+
+.Header .Pills .ControlPanel .DropDown .TextError
+{
+	color: #db3103;
+	padding-bottom: 3px;
+	height: 13px;
+	display: block;	
+	font-size: 10px;	
+}
+
+.Header .Pills .ControlPanel .DropDown .TextBox
+{
+	padding-left: 0;
+	margin-right: 12px;
+}
+
+.Header .Pills .ControlPanel .DropDown .TextBox .Sleeve
+{
+	left: 0;
+}
+
+.Header .Pills .ControlPanel .DropDown .Field
+{
+	margin-bottom: 10px;
+}
+
+.Header .Pills .ControlPanel .DropDown .Field:last-child
+{
+	margin-bottom: 0;
+}
+
+.Header .Pills .ControlPanel .DropDown a.ResetPassword
+{
+	color: White;
+	float: left;
+	display: inherit;
+	text-align: left;
+	width: auto;
+	height: auto;
+	line-height: inherit;
+	margin-top: 8px;
+}
+
+.Header .Pills .ControlPanel .DropDown .Label
+{
+	float: none;
+}
+
+.Header .Pills .ControlPanel .DropDown .LoginInfo
+{
+	float: left;
+	font-size: 11px;
+	color: #D6D6D6;
+}
+.Header .Pills .ControlPanel .DropDown .LoginInfo span
+{
+	display: block;
+	font-size: 14px;
+	font-family: 'Open Sans', Sans-Serif;
+	color: White;
+}
+.Header .Pills .ControlPanel .DropDown.Logout { padding: 0;  background: transparent; }
+
+.Header .Pills .ControlPanel .DropDown.Logout .Field 
+{ 
+	padding: 15px; 
+	height: 33px; 
+	background: rgba(37, 37, 37, 0.96);
+	border-top: 1px solid #1D1D1D;
+	width: 284px;
+}
+.Header .Pills .ControlPanel .DropDown.Logout .LoginInfo
+{
+	width: 182px;
+}
+.Header .Pills .ControlPanel .DropDown.Logout .LoginInfo span
+{
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.Header .Pills .ControlPanel .DropDown ul
+{
+	padding: 5px 15px;
+	border-bottom: 1px solid #505050;
+	margin-top: 0px;
+	float: none;
+	
+	background: rgba(53, 53, 53, 0.96);
+}
+.Header .Pills .ControlPanel .DropDown li
+{
+	width: 100%;
+	float: none;
+}
+
+.Header .Pills .ControlPanel .DropDown li a
+{
+	display: block;
+	text-align: left;
+	text-indent: 5px;
+	font-size: 14px;
+	padding: 0;
+	height: auto;
+	line-height: 40px;
+}
+
+.Header .Pills .ControlPanel .DropDown li a:hover
+{
+	text-decoration: underline;
+}
+
+.Header .Pills .ControlPanel .DropDown li a .Icon
+{
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	background: transparent url(/Content/Images/IconSpritesV3.png) -64px -32px no-repeat;
+	margin-top: 5px;
+}
+.Header .Pills .ControlPanel .DropDown li a .Icon.ServerConfiguration { background-position: -64px -672px; }
+.Header .Pills .ControlPanel .DropDown li a .Icon.AccountSettings { background-position: -64px -1280px; }
+.Header .Pills .ControlPanel .DropDown li a .Icon.ManageServers { background-position: -64px -1248px; }
+
+
+/********************************************************************************
+ * Footer
+ ********************************************************************************/
+ 
+.Footer li.Category a.FooterLink
+{
+	text-decoration: none;
+	color: white;
+}
+
+.Footer div.Legal a.FooterLink
+{
+	color: white;
+}
+
+
+.Footer .Categories div 
+{
+	padding-bottom: 8px;
+	border-bottom: 1px solid #101010;
+	text-shadow: -1px -1px 1px #000000;
+	
+	font-family: 'Open Sans', Arial, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	
+	color: #FFFFFF;
+}
+
+.Footer .Links
+{
+	padding-left: 23px;
+	padding-top: 10px;
+	border-top: 1px solid #323232;
+	text-shadow: -1px -1px 1px #000000;
+
+	font-size: 13px;
+}
+
+.Footer .Links li
+{
+	padding-bottom: 8px;
+}
+
+.Footer .Category .Icon
+{
+	height: 20px;
+	width: 20px;
+	
+	background: transparent url(/Content/Images/IconSpritesV3.png) -96px -80px no-repeat;
+	margin: 5px 5px 0 -2px;
+}
+
+.Footer .Category .Icon.Hosting { background-position: -96px -80px; }
+.Footer .Category .Icon.Service { background-position: -96px -100px; }
+.Footer .Category .Icon.About { background-position: -96px -120px; }
+.Footer .Category .Icon.Support { background-position: -96px -140px; }
+
+.Footer .Legal
+{
+	padding: 13px;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.15);
+	color: #aaaaaa;
+	font-size: 11px;
+}
+.Footer .Legal a
+{
+	color: inherit;
+	text-decoration: underline;
+}
+
+
+/*********************************************************************************
+ * Body
+ *********************************************************************************/
+
+.Body .Frame
+{
+	border-radius: 8px;
+	box-shadow: 0 0 40px -1px black;
+
+	color: #333333;
+	font-family: Arial, Arial, Helvetica, sans-serif;
+} 
+
+.Accent
+{
+	background: transparent url(/Content/Images/HorizontalSpriteV1.png) 0px 0px no-repeat;
+	height: 7px;
+}
+
+.SubAccent
+{
+	background-color: #ECECEC;
+	height: 30px;
+	border-bottom: 1px solid #D6D6D6;
+	border-left: 1px solid #EEEEEE;
+	border-right: 1px solid #EEEEEE;
+	
+	padding: 7px 23px;
+}
+
+.BreadCrumbs li
+{
+	float: left;
+	padding-right: 5px;
+	font-weight: bold;
+	font-size: 12px;
+	text-shadow: -1px 0 0 #FFFFFF;
+	line-height: 23px;
+	padding-top: 4px;
+}
+.BreadCrumbs .Separator
+{
+	background: transparent url(/Content/Images/IconSpritesV3.png) -96px -0px no-repeat;
+	height: 20px;
+	width: 20px;
+	text-indent: -99999px;
+	margin-top: 6px;
+}
+
+.BreadCrumbs a { text-Decoration: none; }
+
+.Crumb .Icon
+{
+	background: transparent url(/Content/Images/IconSpritesV3.png) -96px -20px no-repeat;
+	height: 20px;
+	width: 20px;
+	display: none;
+}
+.Crumb .Icon.Home {}
+.Crumb .Icon.Voice { background-position: -96px -40px; }
+.Crumb .Icon.Generic { background-position: -96px -940px; }
+
+/* Billing Pages */
+.Crumb .Icon.Billing { background-position: -96px -40px; }
+.Crumb .Icon.Purchase { background-position: -96px -600px; }
+.Crumb .Icon.Modify { background-position: -96px -600px; }
+.Crumb .Icon.Invoice { background-position: -96px -600px; }
+.Crumb .Icon.Transfer { background-position: -96px -600px; }
+.Crumb .Icon.Deposit { background-position: -96px -600px; }
+.Crumb .Icon.Receipt { background-position: -96px -600px; }
+
+/* Product and Services Pages */
+.Crumb .Icon.Products { background-position: -96px -40px; }
+.Crumb .Icon.Services { background-position: -96px -40px; }
+.Crumb .Icon.Download { background-position: -96px -780px; }
+
+/* Support Pages */
+.Crumb .Icon.Support { background-position: -96px -1000px; }
+.Crumb .Icon.Contact { background-position: -96px -720px; }
+.Crumb .Icon.FAQ { background-position: -96px -800px; }
+.Crumb .Icon.Tutorial { background-position: -96px -800px; }
+
+/* Company Pages */
+.Crumb .Icon.Company { background-position: -96px -1000px; }
+.Crumb .Icon.Testimonials { background-position: -96px -800px; }
+
+.Crumb .Icon.TypeFrag { background-position: -96px -60px; }
+
+/* Control Panel Pages */
+.Crumb .Icon.ControlPanel { background-position: -96px -840px; }
+.Crumb .Icon.Bans { background-position: -96px -1020px; }
+.Crumb .Icon.Channels { background-position: -96px -800px; }
+.Crumb .Icon.Location { background-position: -96px -640px; }
+.Crumb .Icon.Backups { background-position: -96px -820px; }
+.Crumb .Icon.Configuration { background-position: -96px -840px; }
+.Crumb .Icon.Logs { background-position: -96px -860px; }
+.Crumb .Icon.MOTD { background-position: -96px -980px; }
+.Crumb .Icon.Ranks { background-position: -96px -880px; }
+.Crumb .Icon.Status { background-position: -96px -960px; }
+.Crumb .Icon.Users { background-position: -96px -1000px; }
+.Crumb .Icon.Servers { background-position: -96px -680px; }
+
+.SubAccent .Product
+{
+	background: transparent url(/Content/Images/IconSpritesV3.png) -130px 0 no-repeat;
+	float: right;
+	width: 96px;
+	height: 29px;
+}
+
+.Core
+{
+	background: white;
+	padding: 29px 24px;
+}
+
+.Core:last-child
+{
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+
+.PostCore
+{
+	background: #ECECEC;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	min-height: 8px;
+	
+	border-top: 1px solid #D6D6D6;
+	padding: 29px 24px;
+}
+
+.Core>.Horizontal
+{
+	padding-top: 24px;
+}
+.Core>.Horizontal:first-child,
+.Core>.Horizontal:first-of-type,
+.Core>h1+.Horizontal,
+.Core>h2+.Horizontal,
+.Core>h3+.Horizontal
+{
+	padding-top: 0;
+}
+
+
+.Container
+{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.Container:first-child
+{
+	padding-left: 0px;
+}
+.Container:last-child,
+.OneColumn>.Container
+{
+	padding-right: 0px;
+}
+
+.PostCore .Container
+{
+	border-left: 1px solid #CDCDCD;
+	border-right: 1px solid #FFFFFF;
+}
+
+.PostCore .Container:first-child
+{
+	border-left: none;
+}
+.PostCore .Container:last-child
+{
+	border-right: none;
+}
+
+.Content
+{
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	border: 1px solid #D6D6D6;
+	border-bottom: 1px solid #FFFFFF;
+	padding: 34px 24px;
+	background-color: #F8F8F8;
+}
+
+.Content.Poster p.Feature { font-family: 'Open Sans Condensed', Sans-Serif; font-size: 40px; text-align: center; }
+.Content.Poster p.Feature a { text-decoration: none; }
+
+.Content:last-child,
+.Content.NoFooter
+{
+	border-radius: 6px;
+	border-bottom: 1px solid #D6D6D6;
+	/*margin-bottom: 34px;*/
+}
+
+.Content h2
+{
+	margin-left: 0px;
+}
+
+.Content>hr
+{
+	margin: 0 -24px 24px;
+}
+
+.TitleBar
+{
+	height: 22px;
+	border: 1px solid #D6D6D6;
+	border-bottom: none;
+
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+
+	padding: 15px;
+
+	background: #575757; /* Old browsers */
+	background: -moz-linear-gradient(top,  #575757 0%, #383838 99%, #2c2c2c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#575757), color-stop(99%,#383838), color-stop(100%,#2c2c2c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #575757 0%,#383838 99%,#2c2c2c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #575757 0%,#383838 99%,#2c2c2c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #575757 0%,#383838 99%,#2c2c2c 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #575757 0%,#383838 99%,#2c2c2c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#575757', endColorstr='#2c2c2c',GradientType=0 ); /* IE6-9 */
+
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	
+	text-shadow: -1px -1px 1px black;
+}
+
+.TitleBar.Plain
+{
+	background: #E1E1E1; /* Old browsers */
+	border-bottom: 1px solid #D6D6D6;	
+}
+
+.TitleBar.Borderless
+{
+    border-top-right-radius: 0px !important;
+	border-top-left-radius: 0px !important;
+}
+
+.TitleBar+.Content
+{
+	padding: 12px;
+	border-top: none;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+}
+.TitleBar:not(.Plain)+.Content
+{
+	padding: 12px;
+	border-top: none;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	background-color: #ECECEC;
+}
+
+.FooterBar
+{
+	min-height: 28px ; /*87*/
+	border: 1px solid #D6D6D6;
+	background-color: #ECECEC;
+
+	border-top: none;
+	
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;	
+	
+	/*margin-bottom: 34px;*/
+	padding: 16px;
+}
+
+.TitleBar+.Content+.FooterBar
+{
+	background-color: #E1E1E1;
+	border-top: 1px solid #C8C8C8;
+}
+
+.Dialog
+{
+	font-size: 14px;
+	border-radius: 7px;
+	padding: 24px;
+	color: #333333;
+	border: 1px solid #D8D8D8;
+	background-color: #EBEBEB;
+}
+
+.Dialog:after
+{
+	content: '.'; /* The content to punch it out */
+	display: block; /* Needs to be block to force the bottom */
+	height: 0; /* We don't want it affecting our layout */
+	clear: both; /* Of course, clear the floats */
+	visibility: hidden; /* We don't want anyone seeing the character */
+}
+
+.Dialog .Submit
+{
+	margin-top: 10px;
+}
+
+
+.FooterBar+.TitleBar,
+.FooterBar+.Content,
+.Content+.TitleBar,
+.Content+.Content,
+.Dialog+.TitleBar,
+.Dialog+.Content,
+.FooterBar+.Dialog,
+.Content+.Dialog
+{
+	margin-top: 24px;
+}
+
+
+.Dialog
+{
+	color: White;
+	border: 1px solid #161616;
+	background-color: #3C3C3C;
+}
+.Dialog .Scroller
+{
+	max-height: 500px;
+	overflow: auto;
+	padding-right: 15px;
+}
+.Dialog.commitInfo,
+.Dialog.commitWarning,
+.Dialog.commitError,
+.Dialog.commitSuccess
+{
+	color: #333333;
+	border: 1px solid #D9D9D9;
+	background: #EBEBEB;
+	position: relative;
+	overflow: hidden;
+}
+
+.Dialog.commitInfo *,
+.Dialog.commitWarning *,
+.Dialog.commitError *,
+.Dialog.commitSuccess *
+{
+	position: relative;
+}
+
+
+.Dialog.commitInfo .BigIcon,
+.Dialog.commitWarning .BigIcon,
+.Dialog.commitError .BigIcon,
+.Dialog.commitSuccess .BigIcon
+{
+	display: block;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	
+	margin: auto 0;
+	right: 50px;
+	top: -100px;
+	z-index: 0;
+	
+	background: transparent url(/Content/Images/BigIcon.png) 0px 0px no-repeat;
+}
+
+.Dialog.commitInfo .BigIcon { background-position: 0px -900px; top: -50px; }
+.Dialog.commitWarning .BigIcon { background-position: 0px -600px; top: -30px; }
+.Dialog.commitError .BigIcon { background-position: 0px -300px; top: -0px; }
+.Dialog.commitSuccess .BigIcon { background-position: 0px 0px; top: -100px; }
+
+.Dialog.commitInfo>.Icon,
+.Dialog.commitWarning>.Icon,
+.Dialog.commitError>.Icon,
+.Dialog.commitSuccess>.Icon
+{
+	height: 64px;
+	width: 64px;
+	background: transparent url(/Content/Images/IconSpritesV3.png) 0px -1408px no-repeat;
+	margin-left: -20px;
+	margin-top: -10px;
+	margin-right: 10px;
+}
+.Dialog.commitInfo>.Icon { background-position: 0px -1408px; }
+.Dialog.commitWarning>.Icon { background-position: 0px -1664px; }
+.Dialog.commitError>.Icon { background-position: 0px -1920px; }
+.Dialog.commitSuccess>.Icon { background-position: 0px -2176px; }
+
+
+
+.Dialog .Notification,
+.Dialog hr
+{
+	clear: both;
+	margin-bottom: 20px;
+}
+
+
+.Dialog .Notification+.Submit
+{
+	margin-bottom: 24px;
+}
+
+.Dialog .Notification h4
+{
+	padding-bottom: 0;
+}
+.Dialog .Notification .DateTime
+{
+	font-family: 'Open Sans Condensed', Sans-Serif;
+	color: #909090;
+	margin-bottom: 15px;
+}
+.Dialog .Notification .Author
+{
+	text-align: right;
+	font-family: 'Open Sans', Sans-Serif;
+	color: #909090;
+	margin-top: 10px;
+}
+.Model
+{
+	background-color: rgba(0,0,0,0.5);
+	z-index: 100;
+}
+
+/* Buttons */
+
+.Button
+{
+	display: block;
+	margin: 0 auto;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	
+	border: 1px solid #202020 ;
+	border-radius: 5px;
+	
+	min-width: 105px;
+	height: 29px;
+	padding: 5px 10px;
+	
+	text-align: center;
+	text-shadow: -1px -1px 1px #461f6f;
+	text-decoration: none;
+	line-height: 18px;
+	
+	box-shadow: 1px 1px 0px rgba(255,255,255,0.2) inset, 1px 1px 0 rgba(0,0,0,0.2);
+	
+	background: #5d5d5d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #5d5d5d 0%, #2d2d2d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5d5d5d), color-stop(100%,#2d2d2d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #5d5d5d 0%,#2d2d2d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #5d5d5d 0%,#2d2d2d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #5d5d5d 0%,#2d2d2d 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #5d5d5d 0%,#2d2d2d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d5d5d', endColorstr='#2d2d2d',GradientType=0 ); /* IE6-9 */
+}
+
+.Button:hover
+{
+	color: white;
+	background: #6d6d6d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #6d6d6d 0%, #3d3d3d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6d6d6d), color-stop(100%,#3d3d3d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #6d6d6d 0%,#3d3d3d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #6d6d6d 0%,#3d3d3d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #6d6d6d 0%,#3d3d3d 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #6d6d6d 0%,#3d3d3d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d6d6d', endColorstr='#3d3d3d',GradientType=0 ); /* IE6-9 */
+}
+
+.aspNetDisabled .Button,
+.aspNetDisabled.Button
+{
+	opacity: 0.5;
+	cursor: default;
+}
+
+.aspNetDisabled .Button:hover,
+.aspNetDisabled.Button:hover
+{
+	background: #5d5d5d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #5d5d5d 0%, #2d2d2d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5d5d5d), color-stop(100%,#2d2d2d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #5d5d5d 0%,#2d2d2d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #5d5d5d 0%,#2d2d2d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #5d5d5d 0%,#2d2d2d 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #5d5d5d 0%,#2d2d2d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d5d5d', endColorstr='#2d2d2d',GradientType=0 ); /* IE6-9 */
+}
+
+a.Button
+{
+	display: block;
+	width: 150px;
+	line-height: 17px;
+}
+
+.Button.Large
+{
+	font-weight: 400;
+	font-size: 22px;
+	
+	min-width: 224px;
+	height: 54px;
+	padding: 10px 20px;
+}
+
+a.Button.Large
+{
+    width: 100%;
+	line-height: 32px;
+}
+
+.Button.Small
+{
+    min-width: 95px;
+    height: 22px;
+    padding: 2px 10px;
+}
+a.Button.Small
+{
+    min-width: 95px;
+    line-height: 22px;
+}
+
+.Submit
+{
+	float: right;
+}
+.Submit .Button
+{
+	float: left;
+	margin-left: 15px;
+	height: 32px;
+	min-width: 87px;
+}
+.Submit a.Button
+{
+	line-height: 20px;
+	width: 110px;
+}
+
+.Dismiss
+{
+    margin: 15px 0 0 0;
+}
+.Dismiss a.Button
+{
+	height: 22px;
+	width: 75px;
+	line-height: 22px;
+	padding: 0;
+	margin: 0 10px 20px 0;
+	float: left;
+}
+
+.Button.Cancel
+{	
+	background: #AAAAAA; /* Old browsers */
+	background: -moz-linear-gradient(top,  #AAAAAA 0%, #7B7B7B 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#AAAAAA), color-stop(100%,#7B7B7B)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #AAAAAA 0%,#7B7B7B 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #AAAAAA 0%,#7B7B7B 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #AAAAAA 0%,#7B7B7B 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #AAAAAA 0%,#7B7B7B 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AAAAAA', endColorstr='#7B7B7B',GradientType=0 ); /* IE6-9 */
+	
+	border-color: #707070;
+}
+
+.Button.Cancel:hover
+{
+	background: #BABABA; /* Old browsers */
+	background: -moz-linear-gradient(top,  #BABABA 0%, #8B8B8B 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#BABABA), color-stop(100%,#8B8B8B)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #BABABA 0%,#8B8B8B 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #BABABA 0%,#8B8B8B 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #BABABA 0%,#8B8B8B 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #BABABA 0%,#8B8B8B 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#BABABA', endColorstr='#8B8B8B',GradientType=0 ); /* IE6-9 */
+}
+
+.aspNetDisabled .Button.Cancel:hover,
+.aspNetDisabled.Button.Cancel:hover
+{
+	background: #AAAAAA; /* Old browsers */
+	background: -moz-linear-gradient(top,  #AAAAAA 0%, #7B7B7B 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#AAAAAA), color-stop(100%,#7B7B7B)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #AAAAAA 0%,#7B7B7B 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #AAAAAA 0%,#7B7B7B 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #AAAAAA 0%,#7B7B7B 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #AAAAAA 0%,#7B7B7B 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AAAAAA', endColorstr='#7B7B7B',GradientType=0 ); /* IE6-9 */
+}
+
+/* Form elements */
+
+.Field
+{
+	margin-bottom: 20px;
+}
+
+.Field:last-child
+{
+	margin-bottom: 0;
+}
+
+label
+{
+	cursor: pointer;
+	margin-top: 7px;
+}
+label.Above
+{
+	margin-top: 0;
+}
+
+.TextBox
+{
+	margin-right: 20px;
+	padding-left: 27px;
+	position: relative;
+}
+
+.TextBox .Sleeve
+{
+	position: relative;
+	min-height: 19px;
+	width: 100%;
+	float: left;
+	left: -27px;
+	border: 1px solid #b8b8b8;
+	border-radius: 3px;
+
+	box-shadow: 0px 2px 6px #cdcdcd inset;
+	background-color: white;
+	padding: 5px;
+}
+.TextBox input,
+.TextBox textarea
+{
+	background-color: transparent;
+	border: none;
+	font-size: 14px;
+	height: 19px;
+	color: #333333;
+}
+.TextBox textarea { height: 50px; }
+
+.aspNetDisabled .TextBox
+{
+	opacity: 0.5;
+}
+
+label.Inside
+{
+	position: absolute;
+	float: none;
+	z-index: 1;
+	color: #909090;
+	font-size: 14px;
+	margin: 8px 0 0 6px;
+	cursor: text;
+}
+label.Inside+.TextBox
+{
+	margin-left: 0;
+}
+
+label.Units
+{
+	position: absolute;
+	z-index: 1;
+	color: #909090;
+	font-size: 14px;
+	margin: 8px 20px 0 0;
+	cursor: text;
+	right: 0;
+}
+
+.TextBox .Validator
+{
+	margin-right: -20px;
+	display: block;
+	width: 31px;
+	height: 100%;/*18px;*/
+	margin-left: auto;
+	position: relative;
+	max-height: 32px;
+}
+
+.TextBox .Validator:after
+{
+	content: '.'; /* The content to punch it out */
+	display: block; /* Needs to be block to force the bottom */
+	height: 0; /* We don't want it affecting our layout */
+	clear: both; /* Of course, clear the floats */
+	visibility: hidden; /* We don't want anyone seeing the character */
+}
+
+/*********************************************************************************
+ * Color Changes
+ *********************************************************************************/
+
+.Ventrilo h1,
+.Ventrilo h2,
+.Ventrilo h3,
+.Ventrilo h4,
+.Ventrilo ol,
+.Ventrilo a:not(.Button)
+{
+	color: #4FA729;
+}

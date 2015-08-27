@@ -14,7 +14,9 @@ class AzureMLClient:
 						"ColumnNames":[  
 							# insert headers here, columnNames
 						],
-						"Values":[ #insert answers here, requestBody
+						"Values":[ 
+						# insert answers here, requestBody
+						# accepts an array of arrays
 						]
 					}
 				},
@@ -23,11 +25,12 @@ class AzureMLClient:
 
 
 	def makePrediction(self):
-		if(validSchema == 'valid'):
+		schemaReport = validSchema()
+		if(schemaReport == 'valid'):
 			prediction = sendResponse()
 			return prediction
 		else:
-			return messageReport
+			return schemaReport
 
 
 	def validSchema():
