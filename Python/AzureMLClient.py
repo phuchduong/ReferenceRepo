@@ -38,16 +38,16 @@ class AzureMLClient:
 	# payload. Returns 'valid' if valid, and returns an error report
 	# if not valid
 	def validSchema():
-		messageList = []
+		errorList = []
 		if( len(self.apiKey) == 0 ):
-			messageList.append("API key is missing.")
+			errorList.append("API key is missing.")
 		elif( len(self.apiKey) != 88 ):
 			# silently logs warning. Incase AzureML changes their API
 			# keys in the future, this function won't break.
 			print "Warning: the API key is not exactly 88 characters and may be invalid."
 		
 		if( len(self.postURL) == 0 ):
-			messageList.append("Post URL for webservice is missing.")
+			errorList.append("Post URL for webservice is missing.")
 		elif( len(self.apiKey) != 166 || len(self.apiKey) != 135 ):
 			# silently logs warning. Incase AzureML changes their API
 			# postURLs in the future, this function won't break.
@@ -56,22 +56,22 @@ class AzureMLClient:
 			print "Warning: the post URL is not exactly 166 or 135 characters and may be invalid."
 		
 		if( len(self.columnNames) == 0 ):
-			messageList.append("Client requires column names.")
+			errorList.append("Client requires column names.")
 		
 		try:
 			if( type(self.requestBody[0]) != list):
 				# if nested list array, it is a valid schema
-				messageList.append("Client requires the request body to be a nested list of lists.")
+				errorList.append("Client requires the request body to be a nested list of lists.")
 				if( len(self.requestBody[0]) < 1):
 					# checks if the first nested list is empty
-					messageList.append("Empty inputs within the request body.")
+					errorList.append("Empty inputs within the request body.")
 		except Exception:
 			# bad variable typing. Int, empty string, empty list etc.
-			messageList.append("Client requires a valid request body.")
+			errorList.append("Client requires a valid request body.")
 			pass
 
-		if( len(messageList) > 0 ):
-			messageReport = ' '.join(messageList)
+		if( len(errorList) > 0 ):
+			messageReport = ' '.join(errorList)
 			print messageReport # Logs error server side.
 			return messageReport
 		else:
