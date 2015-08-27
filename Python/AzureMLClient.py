@@ -7,7 +7,7 @@ class AzureMLClient:
 		self.apiKey = ''
 		self.postURL = ''
 		self.columnNames = []
-		self.requestBody = [ [],[] ]
+		self.requestBody = []
 		self.schemaBase = {
 				"Inputs":{  
 					"input1":{  
@@ -70,7 +70,7 @@ class AzureMLClient:
 			messageList.append("Client requires a valid request body.")
 			pass
 
-		if(if not messageList):
+		if( len(messageList) > 0 ):
 			messageReport = ' '.join(messageList)
 			print messageReport # Logs error server side.
 			return messageReport
@@ -86,7 +86,7 @@ class AzureMLClient:
 		schemaJSON['Inputs']['input1']['Values'] = self.requestBody
 		return schemaJSON
 
-		
+
 	# sends request to AzureML webservice, returns a response.
 	def sendResponse(self):
 		schemaJSON = buildSchema()
