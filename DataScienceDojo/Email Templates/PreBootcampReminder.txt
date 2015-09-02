@@ -1,0 +1,27 @@
+Please do the following 3 things prior to the bootcamp.
+
+1.	Watch the prebootcamp webinars to learn the prerequisite information.
+2.	Clone the bootcamp folder to your local laptop from GitHub
+3.	Go over the bootcamp hardware and software requirements
+
+Pre-Botcamp Webinars:
+The webinars are located on our learning portal, the URL is  listed below. The webinars should be about 8-10 hours total. However if you are lacking the time to do so, then at minimum please watch the intro to R programming and Intro to azure ml studio webinars.
+Link: http://datasciencedojo.com/learning-portal/
+Password: “julybootcamp”
+
+Bootcamp Material:
+The bootcamp folder hosted in GitHub and contains all the learning material that you will use throughout the bootcamp and beyond. Please have this bootcamp folder cloned to your local laptop from GitHub prior to the bootcamp since it is a very dense set of materials (106 mb).
+
+The following link is used to request access to the material. After you have been given an email about access, it also contains a tutorial on how to clone the repository after you have been given access.
+http://datasciencedojo.com/git-terms/
+
+Setting up your machine:
+Please try to have your laptop setup prior to attending the bootcamp. The requirements is listed below:
+http://datasciencedojo.com/learning-portal/#setup
+
+If there is any questions or additional help needed please do not hesitate to contact me.
+
+Sincerely,
+Phuc H Duong
+Data Science Dojo
+

@@ -1,0 +1,10 @@
+It has come to our attention that you still have not request access to the bootcamp material via the GitHub request form. The bootcamp folder hosted in GitHub and contains all the learning material that you will use throughout the bootcamp and beyond. Please have this bootcamp folder cloned to your local laptop from GitHub prior to the bootcamp since it is a very dense set of materials (106 mb).
+
+The following link is used to request access to the material. After you have been given an email about access, it also contains a tutorial on how to clone the repository after you have been given access.
+http://datasciencedojo.com/git-terms/
+
+If there is any questions or additional help needed please do not hesitate to contact me.
+
+Sincerely,
+Phuc H Duong
+Data Science Dojo
