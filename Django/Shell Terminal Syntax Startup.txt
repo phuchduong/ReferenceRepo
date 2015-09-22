@@ -1,0 +1,53 @@
+$ mkdir -p story/template/story
+$ touch story/templates/story/base.html
+
+# Going Home
+$ cd
+
+# Changing Directories
+$ cd ../relative/path/to/other/directory/or/file
+$ cd /absolute/path/to/other/directory/or/file
+
+# Listing files and directories
+$ ls ../relative/path/to/other/directory/or/file
+$ ls /absolute/path/to/other/directory/or/file
+
+# shows the file contents as a list
+$ cd -l
+
+# show hidden files
+$ cd -A
+
+# password
+$ -p
+
+# current directory
+pwd
+
+# copying files
+$ cp /files/or/directories/to/copy /directory/to/copy/to/
+
+# recursive copying, all sub-directories and files are also copied
+# cp -R
+
+# display info about a command
+$ cd --help
+$ man mysqldump
+
+# create a file without opening or editing it
+$ touch index.html
+$ touch one.txt
+
+# view file
+$ cat shoppinglist.txt
+
+# view file one screen at a time
+$ less shoppingList.txt
+
+# download files
+$ curl -O http://www.domain.com/path/to/download.tar.gz
+	# -O flag tells curl to write the downloaded content to a 
+	# file with the same name as the remote file.
+
+# download multiple files
+$ curl -0 http://www.domain.com/{one,two,three}.txt

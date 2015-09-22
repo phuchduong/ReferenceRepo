@@ -1,0 +1,43 @@
+virtualenv
+	-- for installation but built in for python 3
+pip
+	-- for installation
+fabric 
+	-- for deployment
+IPython 
+	-- command shell	
+Database migrations
+	-- change python code for models, automatically updates db
+django-debug-toolbar
+	--how did i get to this page?
+	--what view is running
+	--what templates did it use
+	--what variables are available
+	--what sql queries were run
+	-logging? messages?
+
+django-extras
+	--graph models
+
+crispy-forms & floppy-forms
+	--client side validation
+	--beautiful forms
+haystack
+	--API to search engines to search your data
+	--offers serach box.
+	--mispelled words
+	--suggests of other links you'd like
+tastypie
+	--creates a tree of Json data
+	--can edit json trees
+	--great for JS
+	--view post, put, delete
+easy-thumbnails
+	--resize images in template tags.
+django-reversion
+	--unlimited undo
+	--revision software
+django-graphelli
+	--creates custom dashboard
+	--drag and drop records in the admin
+	--autlookups foreign key.
