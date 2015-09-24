@@ -1,0 +1,5 @@
+#updating pip
+pip install --upgrade pip
+
+#installing python 3 package
+pip3 install xmltodict
