@@ -1,0 +1,1 @@
+"amqps://<SAS Key Name>:<SAS Key Name>@<namespace name>.servicebus.windows.net/<event hub name>/ConsumerGroups/<consumer group>/<partition number>/"
