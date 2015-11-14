@@ -5,45 +5,44 @@ import os.path
 soupClient = BeautifulSoup
 
 # parent url
-baseURL = "http://datasciencedojo.com/pricing/"
+baseURL = "http://datasciencedojo.com/bootcamp/alumni/"
 
-# child url
-citiesAr = ["amsterdam","austin","bangalore","barcelona","chicago","copenhagen","dc","dubai","dublin","hong-kong","luxembourg","new york","oulu","paris","seattle","singapore","stockholm","sv","sydney","toronto","zurich"]
+element = 'div'
+selector = 'avia-content-slider-inner'
 
 # summary lists
-failedCities = []
-skippedCities = []
-parsedCities = []
+allLogos = []
+failedLogos = []
+skippedLogos = []
+parsedLogos = []
 
 #where do you want to save your images?
-baseDir = 'C:\\GitRepos\\DSDLegacyCode\\WordPress\\v1\\Bootcamps\\CityPages\\'
+baseDir = 'C:\\GitRepos\\DSDLegacyCode\\WordPress\\v1\\Company Logos'
 
-for city in citiesAr:
-	print("Scraping... " + city)
-	cityPageURL = baseURL + city
-	ulClient = ulReq.urlopen(cityPageURL)
-	cityPageSoup = BeautifulSoup(ulClient.read(), 'html.parser')
-	sliderDivs = cityPageSoup.find_all('div','ls-slide')
-	if len(sliderDivs) > 0 :
-		cityImgURL = sliderDivs[0].img['data-src']
-		cityImgURLSplit = cityImgURL.split('/')
-		imgNameOrg = cityImgURLSplit[-1]
-		imgSplit = imgNameOrg.split('.')
-		imgFormat = imgSplit[-1]
-		imgNameNew = city + "-banner" + "." + imgFormat
-		if os.path.isfile(imgNameNew) is not True:
-			print("saving image for..." + city + "... as..." + imgNameNew)
-			localDir = baseDir + imgNameNew
-			ulReq.urlretrieve(cityImgURL, localDir)
-			parsedCities.append(city)
-		else:
-			print(imgName + " already exists... skipping...")
-			skippedCities.append(city)
+print("Scraping... " + baseURL)
+ulClient = ulReq.urlopen(baseURL)
+pageSoup = BeautifulSoup(ulClient.read(), 'html.parser')
+selectedElements = pageSoup.find_all(element,selector)
+if len(selectedElements) > 0 :
+	logoImgURL = sliderDivs[0].img['data-src']
+	logoImgURLSplit = logoImgURL.split('/')
+	imgNameOrg = logoImgURLSplit[-1]
+	imgSplit = imgNameOrg.split('.')
+	imgFormat = imgSplit[-1]
+	imgNameNew = logo + "-banner" + "." + imgFormat
+	if os.path.isfile(imgNameNew) is not True:
+		print("saving image for..." + logo + "... as..." + imgNameNew)
+		localDir = baseDir + imgNameNew
+		ulReq.urlretrieve(logoImgURL, localDir)
+		parsedLogos.append(logo)
 	else:
-		print("Failed to grab city. Skipping...")
-		failedCities.append(city)
+		print(imgName + " already exists... skipping...")
+		skippedLogos.append(logo)
+else:
+	print("Failed to grab logo. Skipping...")
+	failedLogos.append(logo)
 
 print("Summary report")
-print("parsedCities: " + ', '.join(parsedCities))
-print("skippedCities: " + ', '.join(skippedCities))
-print("failedCities: " + ', '.join(failedCities))
+print("parsedLogos: " + ', '.join(parsedLogos))
+print("skippedLogos: " + ', '.join(skippedLogos))
+print("failedLogos: " + ', '.join(failedLogos))
