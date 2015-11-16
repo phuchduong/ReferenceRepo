@@ -1,0 +1,39 @@
+1. Install R
+2. http://stackoverflow.com/questions/21115295/sublimerepl-unable-to-find-r
+	a. Go to Preferences -> Browse Packages
+	b. create a directory tree User/SublimeREPL/config/R. 
+	c. In that directory, create a new file named Main.sublime-menu
+	d. Main.sublime-menu
+		[
+		     {
+		        "id": "tools",
+		        "children":
+		        [{
+		            "caption": "SublimeREPL",
+		            "mnemonic": "r",
+		            "id": "SublimeREPL",
+		            "children":
+		            [
+		                {"command": "repl_open",
+		                 "caption": "Rterm",
+		                 "id": "repl_r",
+		                 "mnemonic": "r",
+		                 "args": {
+		                    "type": "subprocess",
+		                    "external_id": "r",
+		                    "additional_scopes": ["tex.latex.knitr"],
+		                    "encoding": {"windows": "$win_cmd_encoding"},
+		                    "soft_quit": "\nquit(save=\"no\")\n",
+		                    "cmd": {"windows": ["C:/Program Files/R/R-3.0.2/bin/x64/Rterm.exe", "--ess", "--encoding=$win_cmd_encoding"]},
+		                    "cwd": "$file_path",
+		                    "extend_env": {"windows": {"PATH": "{PATH}:/C/Program Files/R/R-3.0.2/bin"}},
+		                    "cmd_postfix": "\n",
+		                    "suppress_echo": {"windows": false},
+		                    "syntax": "Packages/R/R.tmLanguage"
+		                    }
+		                }
+		            ]
+		        }]
+		    }
+		]
+	e. Save the file, and you should now have a Tools -> SublimeREPL -> Rterm menu option. Double-check that the path is the correct one to the Rterm.exe file. On my computer (32-bit XP) it's in the i386 subfolder of bin, so yours may be in bin/x64 or something like that.
