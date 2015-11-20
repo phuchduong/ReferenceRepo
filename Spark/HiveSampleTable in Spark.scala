@@ -38,5 +38,6 @@ val dwellTb = dwellText.map(s => s.split("\t")).map(
 // turns the dwell object into a dwell table in scala
 dwellTb.registerTempTable("dwellTable")
 
+// query the data in 9 seconds
 %sql
-select * from dwellTable
+select devicemake as device, count(*) as freq from dwellTable where querydwelltime > 20 group by devicemake having freq > 3 order by freq desc limit 7
