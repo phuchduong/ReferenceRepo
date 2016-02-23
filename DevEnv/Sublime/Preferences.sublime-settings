@@ -1,11 +1,12 @@
 // C:\Users\DataScienceDojo\AppData\Roaming\Sublime Text 3\Packages\User
 {
-	"color_scheme": "Packages/Color Scheme - Default/Sunburst.tmTheme",
-	"font_size": 13,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"rulers": [78],
-	"translate_tabs_to_spaces": true,
+    "color_scheme": "Packages/Color Scheme - Default/Sunburst.tmTheme",
+    "font_size": 21,
+    "spell_check": true,
+    "translate_tabs_to_spaces": true,
+    "rulers": [78],
+    "ignored_packages":
+    [
+        "Vintage"
+    ]
 }
